@@ -1,0 +1,47 @@
+/* 
+* 
+* Here will be able all fonts from project 
+*
+*/
+
+@font-face{
+    font-family: "Campton";
+    src: url('../../resources/fonts/Campton/Campton Medium.otf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "Campton";
+    src: url('../../resources/fonts/Campton/Campton Bold.otf');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "Campton";
+    src: url('../../resources/fonts/Campton/Campton Light.otf');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "Roboto Condensed";
+    src: url('../../resources/fonts/Roboto/RobotoCondensed-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "Roboto Condensed";
+    src: url('../../resources/fonts/Roboto/RobotoCondensed-Bold.ttf');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "Roboto Condensed";
+    src: url('../../resources/fonts/Roboto/RobotoCondensed-Light.ttf');
+    font-weight: 200;
+    font-style: normal;
+}

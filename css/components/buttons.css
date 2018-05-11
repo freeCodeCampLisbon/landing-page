@@ -1,0 +1,36 @@
+/*
+*
+* You can create more style buttons here!
+*
+*/
+
+
+button, a{
+    font: 400 14px/16px "Roboto";
+    text-transform: uppercase;
+    color: var(--white-color);
+    box-shadow: 0 3px 6px rgba(0,0,0,.25);
+    border: 0;
+    opacity: 1;
+    transition: opacity .3s ease-in-out;
+    background-color: var(--button-color-style-2);
+    padding: .7em 1.5em .7em 1.5em;  
+}
+
+button.pink, 
+a.pink{
+    background-color: var(--button-color-style-1);
+    padding: .7em 1.5em .7em 2.5em;        
+}
+
+button.green, 
+a.green{
+    background-color: var(--button-color-style-2);
+    padding: .7em 1.5em .7em 1.5em;    
+}
+
+button:hover,
+a:hover{
+    opacity: .75;
+    cursor: pointer;
+}

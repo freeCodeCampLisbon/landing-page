@@ -1,0 +1,20 @@
+/*
+*
+* Here will be all the imports of the project.
+*
+* If you create a new css, you need to import that, don't forget it!
+*
+*/
+
+@import "components/variables.css";
+@import "components/reset.css";
+@import "components/fonts.css";
+@import "components/icons.css";
+@import "components/layout.css";
+@import "components/headings.css";
+@import "components/buttons.css";
+@import "components/forms.css";
+
+body{
+    font: 200 14px/16px "Campton", Arial, sans-serif;
+}

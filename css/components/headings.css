@@ -1,0 +1,36 @@
+/*
+*
+* Some heading styles default. You can add more here 
+*
+*/
+
+p{
+    position: relative;
+    font: 200 14px/16px "Campton";
+}
+
+h1 {
+    position: relative;
+    font: 400 56px/67px "Campton";
+    padding: 1em 2em;
+}
+
+h2 {
+    position: relative;
+    font: 200 45px/54px "Campton";
+}
+
+h3{
+    font:200 24px/29px "Campton";
+    color: var(--grey-color);
+}
+
+/* horizontal row */
+
+hr{
+    width: 100px;
+    display: block;
+    height: 3px;
+    background: var(--secondary-color);
+    border: 0;
+}

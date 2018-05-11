@@ -1,0 +1,16 @@
+/* 
+*
+* Before you create new variables, check if you got same variables!
+*
+*/
+
+:root{
+    --main-color: #076604;
+    --secondary-color: #CC2951;
+    --button-color-style-1: #CC2951;
+    --button-color-style-2: #076604;
+    --white-color: #fff;
+    --black-color: #000;
+    --grey-color: #ADADAD;
+    --grey-color-2: #2B2C27;
+}

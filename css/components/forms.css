@@ -1,0 +1,28 @@
+form{
+    position: relative;
+}
+
+form input{
+    font: 200 14px/16px "Campton";
+    padding:8px 16px;
+    border: 1px solid var(--main-color);
+    opacity: .6;
+    transition: opacity .3s ease-in-out
+}
+
+form input:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+form input:focus{
+    opacity: 1;
+    outline: 0;
+    box-shadow: 0 3px 6px rgba(7,102,4,.25);
+}
+
+form input::placeholder{
+    font:200 14px/17px "Campton";
+    color: var(--grey-color-2);
+    opacity: .4;
+}
