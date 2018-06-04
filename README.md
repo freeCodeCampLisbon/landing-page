@@ -13,26 +13,29 @@ learning to code.
 
 # Table of Contents
 * Instalation
-** Built With
+* Built With
+* Authors
+* License
+* Acknowledgments
 
 # Instalation
 
 After you done your git clone of this repository, just open your html with your default browser.
 
-## Built With
+# Built With
 
 * [BEMCSS](http://www.getbem.com/introduction/) - CSS Methodology
 * [Bootstrap](https://getbootstrap.com/) - Web Framework developed with HTML, CSS & JS
 
-## Authors
+# Authors
 
 This authors are from freeCodeCampLisbon, after we done the project we will obtain all the links of the persons and share here.
 
-## License
+# License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-## Acknowledgments
+# Acknowledgments
 
 * Team Work, replicate work environment
 * Inspiration
