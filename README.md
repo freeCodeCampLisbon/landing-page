@@ -1,35 +1,36 @@
-Welcome to **`freeCodeCampLisbon`** Landing page project!
+Welcome to **`freeCodeCampLisbon`**'s Landing Page project!
 
 # Description
 
-For all the new persons comes to see for the first time, freeCodeCamp is an open source community that helps you learn to code, build pro bono project for nonprofits, and get a job as a developer.
+For all the new persons who don't know: [freeCodeCamp](https://freecodecamp.org) is an open source community that helps you learn to code and get a job as a developer. You also build pro bono project for non-profits.
 
-This community had a lot of communities around the world! And we're one of more that 1,000 campsites that already exists.
+This community has a lot of communities around the world! freeCodeCampLison one of more than 1,000 camp sites that already exist.
 
-And that's why we decide to create our first project: our lading page community!
+We have a [weekly meeting](https://www.facebook.com/groups/free.code.camp.lisbon/) at [Edge Portugal](http://www.edge.pt) where we code, help and educate each other.
 
-This will not be develop from group admin or people have already knowledge on this area, it will be develop from students, from people who are
-learning to code.
+There we decided to create our first community project: our Landing Page!
+
+This will not be developed by the group admins or people who already have a lot of knowledge in this area. It will be developed by students, by people who are learning to code! Like this, we will learn the workflow to build such a project in a team and how to use the appropriate tools.
 
 # Table of Contents
-* Instalation
-* Built With
+* Installation
+* Built With Our Tech-Stack
 * Authors
 * License
 * Acknowledgments
 
-# Instalation
+# Installation
 
-After you done your git clone of this repository, just open your html with your default browser.
+After you have done your git clone of this repository, just open your html with your default browser.
 
-# Built With
+# Built With Our Tech-Stack
 
 * [BEMCSS](http://www.getbem.com/introduction/) - CSS Methodology
 * [Bootstrap](https://getbootstrap.com/) - Web Framework developed with HTML, CSS & JS
 
 # Authors
 
-This authors are from freeCodeCampLisbon, after we done the project we will obtain all the links of the persons and share here.
+All authors are from freeCodeCampLisbon. After we are done with the project, we will share the links of the persons here.
 
 # License
 
@@ -40,4 +41,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 * Team Work, replicate work environment
 * Inspiration
 * Use good code
-* etc
+* etc.
