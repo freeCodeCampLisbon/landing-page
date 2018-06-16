@@ -5,8 +5,13 @@ section.heroSection .jumbotron{
     background-position: cover;
     background-size: 100% 100vh;
     }
-section.heroSection .jumbotron a{
-        color: white;
-        box-shadow: none;
-        padding: 5px 5px;  
+section.heroSection .socialMedia a{
+    box-shadow: none;
+    color: white;
+    padding: 5px 5px;  
     }
+section.heroSection .jumbotron .heroButton{
+    color: white;
+    font-size: 0.8rem;
+    padding: 5px 25px;    
+}
