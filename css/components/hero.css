@@ -1,9 +1,9 @@
-section.heroSection .jumbotron{
+section.heroSection .heroContainer{
     color: white;
     background:linear-gradient(rgba(0, 100, 0, 0.90), rgba(0, 100, 0, 1)), url("../../resources/img/heroImage.png") no-repeat;
-    background-color: rgba(0,100,0,0.5);
-    background-position: cover;
-    background-size: 100% 100vh;
+    background-size: cover;
+    padding-top: 25vh;
+    padding-bottom: 25vh;
     }
 section.heroSection .socialMedia a{
     box-shadow: none;
@@ -13,5 +13,5 @@ section.heroSection .socialMedia a{
 section.heroSection .jumbotron .heroButton{
     color: white;
     font-size: 0.8rem;
-    padding: 5px 25px;    
+    padding: 5px 25px; 
 }

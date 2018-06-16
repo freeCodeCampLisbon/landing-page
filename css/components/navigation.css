@@ -1,6 +1,6 @@
 /* styling related to navbar section*/
 nav.navStyle a{
-    color: white;
+    color: white; 
     text-transform: lowercase;
     box-shadow: none;
    }
