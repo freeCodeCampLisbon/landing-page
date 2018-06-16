@@ -1,14 +1,11 @@
 section.heroSection .jumbotron{
     color: white;
-    background:linear-gradient(
-        rgba(0, 100, 0, 0.90), 
-        rgba(0, 100, 0, 1)
-      ), url("../../resources/img/heroImage.png") no-repeat;
+    background:linear-gradient(rgba(0, 100, 0, 0.90), rgba(0, 100, 0, 1)), url("../../resources/img/heroImage.png") no-repeat;
     background-color: rgba(0,100,0,0.5);
     background-position: cover;
     background-size: 100% 100vh;
     }
-section.heroSection .jumbotron a {
+section.heroSection .jumbotron a{
         color: white;
-        box-shadow: none;
+        box-shadow: none;  
     }

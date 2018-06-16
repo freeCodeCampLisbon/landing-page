@@ -1,8 +1,5 @@
-/* styling related to navbar and hero sections*/
-nav.navStyle{
-    background-color: rgba(0, 100, 0);
-}
-nav.navStyle a, ul.navLists li a{
+/* styling related to navbar section*/
+nav.navStyle a{
     color: white;
     text-transform: lowercase;
     box-shadow: none;
