@@ -1,4 +1,7 @@
 /* styling related to navbar and hero sections*/
+nav{
+    background-color: #006400;
+}
 nav a{
 color: white !important;
 text-transform: lowercase !important;
