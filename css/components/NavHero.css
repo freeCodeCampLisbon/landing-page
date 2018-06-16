@@ -1,16 +1,20 @@
 /* styling related to navbar and hero sections*/
-.jumbotron{
+section.heroSection .jumbotron{
     color: white;
-    background-image: url("resources/img/heroImage.jpg"), !important;
-    background-color: rgb(0, 100, 0) !important;
-    background-blend-mode: multiply !important;
+    background:linear-gradient(
+        rgba(0, 100, 0, 0.90), 
+        rgba(0, 100, 0, 1)
+      ), url("../../resources/img/heroImage.png") no-repeat;
+    background-color: rgba(0,100,0,0.5);
+    background-position: cover;
+    background-size: 100% 100vh;
     }
-.jumbotron a {
+section.heroSection .jumbotron a {
         color: white;
-        box-shadow: none !important;
+        box-shadow: none;
     }
 nav{
-    background-color: #006400;
+    background-color: rgba(0, 100, 0);
 }
 nav a{
     color: white !important;
