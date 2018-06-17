@@ -2,8 +2,8 @@ section.heroSection .heroContainer{
     color: white;
     background:linear-gradient(rgba(0, 100, 0, 0.90), rgba(0, 100, 0, 1)), url("../../resources/img/heroImage.png") no-repeat;
     background-size: cover;
-    padding-top: 25vh;
-    padding-bottom: 25vh;
+    padding-top: 12%;
+    padding-bottom: 12%;
     }
 section.heroSection .socialMedia a{
     box-shadow: none;
