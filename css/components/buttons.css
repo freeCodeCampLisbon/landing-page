@@ -3,7 +3,9 @@
 * You can create more style buttons here!
 *
 */
-
+button{
+    border-radius:0;
+}
 
 button, a{
     font: 400 14px/16px "Roboto";
@@ -34,3 +36,4 @@ a:hover{
     opacity: .75;
     cursor: pointer;
 }
+
