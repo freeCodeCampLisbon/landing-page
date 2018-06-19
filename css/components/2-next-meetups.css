@@ -49,6 +49,8 @@
 #nxt-meetup .nxt-meetup-content p {
 	font-size: 17px;	
 	color: var(--grey-color);
+	margin-top:40px;
+	margin-bottom:40px;
 }
 /*
 	- button
@@ -74,6 +76,27 @@
 	}
 	#nxt-meetup .nxt-meetup-img-bg, #nxt-meetup .nxt-meetup-img {
 		height: 196px;
+	}
+
+	/*content stylig*/
+	#nxt-meetup .nxt-meetup-content {
+		width: 430px;
+	}
+	#nxt-meetup .nxt-meetup-content h3 {
+		font-size: 1.7em;
+	}
+	#nxt-meetup .nxt-meetup-content p {
+		margin-top: 0;
+		margin-bottom: 40px;
+	}
+	#nxt-meetup .nxt-meetup-content h3, #nxt-meetup .nxt-meetup-content p {
+		padding-top: 20px;
+		padding-left: 28px;
+		text-align: left;
+	}
+	#nxt-meetup .nxt-meetup-content button {
+		display: block;
+		margin-left: 28px;
 	}
 }
 
