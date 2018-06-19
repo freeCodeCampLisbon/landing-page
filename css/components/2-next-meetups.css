@@ -6,7 +6,7 @@
 /* - header 
 	 - header color and positioning
 */
-#nxt-meetup .nxt-meetup-header h3 {
+#nxt-meetup h3 {
 	padding: 0;
 	margin: 0;
 	color: var(--grey-color);
@@ -44,11 +44,39 @@
 
 #nxt-meetup .nxt-meetup-content h3 {
 	font-size: 14px;	
+	color: var(--grey-color-2);
+}
+#nxt-meetup .nxt-meetup-content p {
+	font-size: 17px;	
+	color: var(--grey-color);
 }
 /*
 	- button
 */
 #nxt-meetup .nxt-meetup-content button {
-    font: 400 14px/16px "Roboto";
+    font: 400 14px/16px "Campton";
     text-transform: uppercase;
 }
+
+/*
+	media query = break point
+*/
+@media (min-width: 768px) {
+	/* main costainer layout */
+	#nxt-meetup {
+		box-sizing: border-box;
+		height: 264px;
+		width: 100%;
+	}
+	/* image container layout */
+	#nxt-meetup .img-container {
+		width: 660px;
+	}
+	#nxt-meetup .nxt-meetup-img-bg, #nxt-meetup .nxt-meetup-img {
+		height: 196px;
+	}
+}
+
+
+
+
