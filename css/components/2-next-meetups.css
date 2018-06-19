@@ -6,9 +6,34 @@
 /* - header 
 	 - header color and positioning
 */
-#nxt-meetup .nxt-meetup-header h1 {
+#nxt-meetup .nxt-meetup-header h3 {
 	padding: 0;
 	margin: 0;
 	color: var(--grey-color);
 }
 
+/*
+	- image
+	- image styling and positioning
+	- image background styling and coloring
+	- image paragraph styling
+*/
+#nxt-meetup .nxt-meetup-img-bg {
+	background-color: var(--main-color);
+}
+
+#nxt-meetup .nxt-meetup-img {
+	background: linear-gradient(rgba(7,102,4,0.8), rgba(7,102,4,0.8)), url(../../resources/img/meetup4.jpg);
+	background-position: center center; 
+	height: 120px;
+	position: relative;
+}
+
+#nxt-meetup .nxt-meetup-img p { 
+	font-size: 1.5em;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+}
