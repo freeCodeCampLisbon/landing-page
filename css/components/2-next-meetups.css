@@ -1,0 +1,14 @@
+/*NEXT MEETUP SECTION*/
+#nxt-meetup {
+	height: 321px;	
+}
+
+/* - header 
+	 - header color and positioning
+*/
+#nxt-meetup .nxt-meetup-header h1 {
+	padding: 0;
+	margin: 0;
+	color: var(--grey-color);
+}
+
