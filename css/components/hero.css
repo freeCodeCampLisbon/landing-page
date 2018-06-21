@@ -1,0 +1,17 @@
+section.heroSection .heroContainer{
+    color: white;
+    background:linear-gradient(rgba(0, 100, 0, 0.90), rgba(0, 100, 0, 1)), url("../../resources/img/heroImage.png") no-repeat;
+    background-size: cover;
+    padding-top: 12%;
+    padding-bottom: 12%;
+    }
+section.heroSection .socialMedia a{
+    box-shadow: none;
+    color: white;
+    padding: 5px 5px;  
+    }
+section.heroSection .jumbotron .heroButton{
+    color: white;
+    font-size: 0.8rem;
+    padding: 5px 25px; 
+}
