@@ -17,6 +17,7 @@
 @import "components/2-next-meetups.css";
 @import "components/navigation.css";
 @import "components/hero.css";
+@import "components/contacts.css";
 
 body{
     font: 200 14px/16px "Campton", Arial, sans-serif;
