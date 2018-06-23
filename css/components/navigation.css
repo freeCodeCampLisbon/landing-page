@@ -10,3 +10,22 @@ nav.navStyle button{
     box-shadow: none;
     padding: 0;
 }
+.navStyle .imgWhite{
+    display: block;
+}
+.navStyle.scrolled .imgWhite{
+    display: none;
+}
+.navStyle .imgNormal{
+    display: none;
+}
+.navStyle.scrolled .imgNormal{
+    display: block;
+}
+.navStyle.scrolled {
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 3px 6px rgba(0,0,0,.25);
+}
+.navStyle.scrolled a{
+    color: black !important;
+}

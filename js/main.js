@@ -13,3 +13,18 @@ function burgerFunction() {
         lists.style.textAlign = "right";
     }
 }
+
+//navigation bar scroll function
+var $nav = $(".navStyle");
+var $hero = $(".heroSection");
+$(function () {
+    $(document).scroll(function (){
+        $nav.toggleClass('scrolled', $(this).scrollTop() > $hero.height());
+    });
+  });
+
+ $(document).ready(function() {
+    if($(this).scrollTop() > $hero.height()){
+        $nav.toggleClass("scrolled");
+    }
+});
