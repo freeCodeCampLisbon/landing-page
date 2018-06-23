@@ -1,4 +1,10 @@
 /* styling related to navbar section*/
+nav.navStyle{
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    transition-delay: 1ms;
+}
 nav.navStyle a{
     color: white; 
     text-transform: lowercase;
