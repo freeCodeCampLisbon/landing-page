@@ -1,0 +1,9 @@
+footer.footerSection{
+    background-color: rgb(7, 100, 4);
+    color:white;
+
+}
+footer.footerSection .socialMedia a{
+    box-shadow: none;
+    color: white;
+    }
