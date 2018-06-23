@@ -3,6 +3,8 @@ nav.navStyle a{
     color: white; 
     text-transform: lowercase;
     box-shadow: none;
+    font:200 14px/16px 'Campton';
+    padding:0;
    }
 nav.navStyle button{
     border: none;
