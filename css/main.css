@@ -14,12 +14,11 @@
 @import "components/headings.css";
 @import "components/buttons.css";
 @import "components/forms.css";
-@import "components/NavHero.css";
 @import "components/past-meetups.css";
+@import "components/2-next-meetups.css";
+@import "components/navigation.css";
+@import "components/hero.css";
 
 body{
     font: 200 14px/16px "Campton", Arial, sans-serif;
-}
-nav{
-    background-color: #006400;
 }

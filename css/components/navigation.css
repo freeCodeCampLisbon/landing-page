@@ -1,0 +1,12 @@
+/* styling related to navbar section*/
+nav.navStyle a{
+    color: white; 
+    text-transform: lowercase;
+    box-shadow: none;
+   }
+nav.navStyle button{
+    border: none;
+    background: none;
+    box-shadow: none;
+    padding: 0;
+}
