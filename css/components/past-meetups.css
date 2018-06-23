@@ -1,0 +1,46 @@
+.title_meetups{
+    font: 200 1.5rem "Campton", Arial, sans-serif;
+    color: grey;
+    margin-bottom: 25px;
+    margin-top: 40px;
+}
+
+.container-space{
+    margin: 20px;
+}
+
+.bg_1{
+    background: #006400;
+}
+.bg_2{
+    background: #006400;
+    width: 100%;
+    height: 300px;
+    position: relative;
+    opacity: 0.9;
+}
+.image{
+    z-index: -1;
+    position: absolute;
+    margin-left: -21px;
+    box-shadow: 0 4px 10px 0 rgba(5, 5, 5, 0.94);
+    border: 0.5px solid #d7d7d7;
+    opacity: 0.6;
+}
+
+.item-p{
+    z-index: 999;
+    top: 229px;
+    color: white;
+    font-size: 1.3rem;
+    font-family: RobotoCondensed-Bold, Arial, sans-serif;
+    padding-right: 26px;
+}
+
+.space-around{
+   margin-bottom: 25px;
+
+}
+.btn-space{
+    margin: 25px;
+}
