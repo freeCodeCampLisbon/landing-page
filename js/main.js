@@ -32,11 +32,13 @@ $(function () {
 //navigation bar scroll inside hero section
 $(function () {
     $(document).scroll(function (){
-        $nav.toggleClass('scrollInside', $(this).scrollTop() > $nav.height());
+        $nav.toggleClass('scrollInside', $(this).scrollTop() < $hero.height() && $(this).scrollTop() > $nav.height());   
     });
   });
   $(document).ready(function() {
-    if($(this).scrollTop() > $nav.height()){
-        $nav.toggleClass("scrollInside");
+    if($(this).scrollTop() < $hero.height()){
+        if($(this).scrollTop() > $nav.height()){
+            $nav.toggleClass("scrollInside");
+        }
     }
 });
