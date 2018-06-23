@@ -1,9 +1,12 @@
 footer.footerSection{
     background-color: rgb(7, 100, 4);
     color:white;
-
-}
+    height: 140px;
+    }
 footer.footerSection .socialMedia a{
     box-shadow: none;
     color: white;
+    }
+    footer.footerSection .signature{
+        font:200 14px/16px 'Campton';
     }
