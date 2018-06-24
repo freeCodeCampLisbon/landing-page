@@ -1,21 +1,31 @@
 /* styling related to navbar section*/
 nav.navStyle{
+    -webkit-transition-property: all;
+    -o-transition-property: all;
     transition-property: all;
-    transition-duration: 1s;
-    transition-timing-function: linear;
-    transition-delay: 1ms;
+    -webkit-transition-duration: 1s;
+         -o-transition-duration: 1s;
+            transition-duration: 1s;
+    -webkit-transition-timing-function: linear;
+         -o-transition-timing-function: linear;
+            transition-timing-function: linear;
+    -webkit-transition-delay: 1ms;
+         -o-transition-delay: 1ms;
+            transition-delay: 1ms;
 }
 nav.navStyle a{
     color: white; 
     text-transform: lowercase;
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
     font:200 14px/16px 'Campton';
     padding:0;
    }
 nav.navStyle button{
     border: none;
     background: none;
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
     padding: 0;
 }
 .navStyle .imgWhite{
@@ -32,7 +42,8 @@ nav.navStyle button{
 }
 .navStyle.scrolled {
     background-color: rgba(255, 255, 255, 0.95);
-    box-shadow: 0 3px 6px rgba(0,0,0,.25);
+    -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+            box-shadow: 0 3px 6px rgba(0,0,0,.25);
 }
 .navStyle.scrolled a{
     color: black !important;

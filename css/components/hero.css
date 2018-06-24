@@ -1,5 +1,8 @@
 section.heroSection .heroContainer{
     color: white;
+    background:-webkit-gradient(linear, left top, left bottom, from(rgba(7, 102, 4, 0.90)), to(rgba(7, 102, 4, 1))), url("../../resources/img/heroImage.png") no-repeat;
+    background:-webkit-linear-gradient(rgba(7, 102, 4, 0.90), rgba(7, 102, 4, 1)), url("../../resources/img/heroImage.png") no-repeat;
+    background:-o-linear-gradient(rgba(7, 102, 4, 0.90), rgba(7, 102, 4, 1)), url("../../resources/img/heroImage.png") no-repeat;
     background:linear-gradient(rgba(7, 102, 4, 0.90), rgba(7, 102, 4, 1)), url("../../resources/img/heroImage.png") no-repeat;
     background-size: cover;
     padding-top: 12%;
@@ -7,7 +10,8 @@ section.heroSection .heroContainer{
     height: 100vh;
     }
 section.heroSection .socialMedia a{
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
     color: white;
     padding: 5px 5px;  
     }
