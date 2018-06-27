@@ -9,8 +9,7 @@ section.quemSomosSection .wrapper{
 }
 
 section.quemSomosSection .nameSection{
-    padding-right: 15px;
-    padding-left: 15px;
+   
     margin-bottom: 6rem;
     color:var(--grey-color);
     grid-column:1/-1;
@@ -22,25 +21,23 @@ section.quemSomosSection .mainTitleSection{
 }
 
 section.quemSomosSection .mainTitleSection>h2{
-    padding-right: 15px;
-    padding-left: 15px;
+   
 }
 
-section.quemSomosSection .underline{
-    margin-left: 7px;
+section.quemSomosSection hr{
+    margin-left: 0px;
     width: 4em;
 }
 
 section.quemSomosSection .image1{
-    padding: 0.7rem 15px;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
     grid-column:1/-1;
     overflow: hidden;
     grid-column:1/-1;
 }
 
 section.quemSomosSection .image2{
-    padding-right: 15px;
-    padding-left: 15px;
     margin-top:0.7rem;
     margin-bottom:0.7rem;
     overflow: hidden;
@@ -48,8 +45,6 @@ section.quemSomosSection .image2{
 }
 
 section.quemSomosSection .image3{
-    padding-right: 15px;
-    padding-left: 15px; 
     margin-top:0.7rem;
     margin-bottom:0.7rem;
     overflow: hidden;
@@ -61,7 +56,8 @@ section.quemSomosSection .image1>img , .image2>img , .image3>img {
 }
 
 section.quemSomosSection .text1 , .text2{
-    padding: 0.7rem 15px;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
     grid-column:1/-1;
 }
 
@@ -81,15 +77,10 @@ section.quemSomosSection .descobreMais{
 
 /*MEDIA QUERIES*/
 
-@media (min-width: 576px){
-    section.quemSomosSection .wrapper{
-        max-width: 540px;
-    }
-}
+
 
 @media (min-width: 768px){
     section.quemSomosSection .wrapper{
-        max-width: 720px;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: auto 4rem 15rem auto auto auto;
     }
@@ -125,7 +116,10 @@ section.quemSomosSection .descobreMais{
 
     section.quemSomosSection .descobreMais {
          justify-content: start;
-    }    
+    } 
+    section.quemSomosSection hr{
+        margin-left: -24px;
+    }   
  }
 
 
@@ -133,7 +127,6 @@ section.quemSomosSection .descobreMais{
    
     section.quemSomosSection .wrapper{
         grid-template-columns: repeat(13, 1fr);
-        max-width: 960px;
     }
 
     section.quemSomosSection .mainTitleSection{
