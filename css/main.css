@@ -19,6 +19,7 @@
 @import "components/navigation.css";
 @import "components/hero.css";
 @import "components/contacts.css";
+@import "components/footer.css";
 
 body{
     font: 200 14px/16px "Campton", Arial, sans-serif;
