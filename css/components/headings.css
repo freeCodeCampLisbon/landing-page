@@ -25,6 +25,11 @@ h3{
     color: var(--grey-color);
 }
 
+h6 {
+    font: 200 18px "Campton";
+    color: var(--grey-color);
+}
+
 /* horizontal row */
 
 hr{
