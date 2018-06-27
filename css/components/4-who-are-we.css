@@ -1,4 +1,4 @@
-.wrapper{
+.container{
     margin:auto;
     width:100%;
     margin: 8rem auto auto auto;
@@ -82,13 +82,13 @@
 /*MEDIA QUERIES*/
 
 @media (min-width: 576px){
-    .wrapper{
+    .container{
         max-width: 540px;
     }
 }
 
 @media (min-width: 768px){
-    .wrapper{
+    .container{
         max-width: 720px;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: auto 4rem 15rem auto auto auto;
@@ -131,7 +131,7 @@
 
 @media (min-width: 992px){
    
-    .wrapper{
+    .container{
         grid-template-columns: repeat(13, 1fr);
         max-width: 960px;
     }
