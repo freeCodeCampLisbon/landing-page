@@ -36,9 +36,7 @@ $(function () {
     });
   });
   $(document).ready(function() {
-    if($(this).scrollTop() < $hero.height()){
-        if($(this).scrollTop() > $nav.height()){
+    if(($(this).scrollTop() < $hero.height()) && ($(this).scrollTop() > $nav.height())){
             $nav.toggleClass("scrollInside");
-        }
     }
 });
