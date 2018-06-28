@@ -20,3 +20,7 @@ section.heroSection .jumbotron .heroButton{
     font-size: 0.8rem;
     padding: 5px 25px; 
 }
+section.heroSection .heroContainer hr{
+    border-top: 0.1em solid rgb(255, 255, 255);
+    background: var(--white-color);
+}
