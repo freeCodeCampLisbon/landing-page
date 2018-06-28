@@ -7,13 +7,13 @@ footer.footerSection .socialMedia a{
     box-shadow: none;
     color: white;
     padding: 10px;
+    text-decoration: none;
     }
 footer.footerSection .signature{
     font:200 14px/16px 'Campton';
     text-align: center;
     }
 .heart{
-    color:red;
-    font-size: 1.5em;
+    color: var(--secondary-color);
 }
      
