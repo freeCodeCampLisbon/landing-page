@@ -7,7 +7,7 @@ section.heroSection .heroContainer{
     background-size: cover;
     padding-top: 12%;
     padding-bottom: 12%;
-    height: 100vh;
+    min-height: 100vh;
     }
 section.heroSection .socialMedia a{
     -webkit-box-shadow: none;
