@@ -1,7 +1,24 @@
 .title_join_us{
-    font: 200 1.5rem "Campton", Arial, sans-serif;
+    font: 200 18px "Campton", Arial, sans-serif;
     color: grey;
-    margin-bottom: 25px;
-    margin-top: 40px;
+    margin: 40px 36px 25px 36px;
 }
+
+.insta_img {
+    width: 165px;
+    height: 172px;
+}
+
+.insta_img_container {
+    margin-left: 36px !important;
+}
+
+.insta_row {
+    margin-bottom: 12px;
+}
+
+.insta_col {
+    margin: 0 -15px;
+}
+
 
