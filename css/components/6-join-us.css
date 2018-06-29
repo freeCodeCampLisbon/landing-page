@@ -1,3 +1,6 @@
+/***** CSS for the Join us section *****/ 
+/***** Instagram Image Showcase ******/
+
 .title_join_us{
     font: 200 18px "Campton", Arial, sans-serif;
     color: grey;
@@ -21,4 +24,28 @@
     margin: 0 -15px;
 }
 
+/***** Email Form *****/
 
+.form_join_us_title {
+    text-align: center;
+    margin-top: 27px;
+    color: #076604;
+}
+
+.form_join_us_subtitle {
+    text-align: center;
+}
+
+.form_join_us {
+    text-align: center;
+}
+
+.form_join_us_input {
+    margin-top: 7px;
+    width: 100%;
+}
+
+.form_join_us_button {
+    float: right;
+    margin-top: 7px;
+}
