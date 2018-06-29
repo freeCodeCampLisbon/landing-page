@@ -13,7 +13,8 @@ section.heroSection .socialMedia a{
     -webkit-box-shadow: none;
             box-shadow: none;
     color: white;
-    padding: 5px 5px;  
+    padding: 5px 5px;
+    font-size: 1.3em;
     }
 section.heroSection .jumbotron .heroButton{
     color: white;
