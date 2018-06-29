@@ -107,4 +107,11 @@
         margin: 7px auto;
         display: block;
     }
+
+    .form_join_us_button {
+        width: 200px;
+        display: block;
+        float: right;
+        margin-right: 91px;
+    }
 }
