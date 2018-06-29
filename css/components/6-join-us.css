@@ -2,7 +2,7 @@
 /***** Instagram Image Showcase ******/
 
 .title_join_us{
-    font: 200 18px "Campton", Arial, sans-serif;
+    font-size: 18px;
     color: grey;
     margin: 40px 36px 25px 36px;
 }
@@ -12,18 +12,28 @@
     height: 172px;
 }
 
-.insta_img_container {
-    margin-left: 36px !important;
-}
-
 .insta_row {
-    margin-bottom: 12px;
+    float: none;
+    margin: 0 auto;
 }
 
 .insta_col {
-    margin: 0 -15px;
+    margin: 0 0 15px 0; 
 }
 
+.insta_col:nth-child(odd) {
+    padding-right: 7px;
+    margin-right: -7px;
+}
+
+.insta_col:nth-child(even) {
+    padding-left: 7px;
+    margin-left: -7px;
+}
+
+.insta_img_container {
+    text-align: center;
+}
 /***** Email Form *****/
 
 .form_join_us_title {
@@ -48,4 +58,24 @@
 .form_join_us_button {
     float: right;
     margin-top: 7px;
+}
+
+.form_join_us_container {
+    margin-bottom: 52px;
+}
+
+/***** Media Queries *****/
+
+/* Tablets */
+@media (min-width: 768px) {
+    .join_us_full {
+        display: flex;
+    }
+    .insta_img_container {
+        width: 100%;
+        float: center;
+    }
+    .form_join_us_container {
+        flex-grow: 1;
+    }
 }
