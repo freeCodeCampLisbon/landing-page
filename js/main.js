@@ -40,3 +40,30 @@ $(function () {
             $nav.toggleClass("scrollInside");
     }
 });
+
+//nav-items click and scroll
+$(".nav-proximoMeet").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#nxt-meetup").offset().top},
+        'slow');
+});
+$(".nav-quemSomos").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".quemSomos").offset().top},
+        'slow');
+});
+$(".nav-testemunhos").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".testimonialsSection").offset().top},
+        'slow');
+});
+$(".nav-meetups").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".meetupsSection").offset().top},
+        'slow');
+});
+$(".nav-junta-te").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#").offset().top},
+        'slow');
+});
