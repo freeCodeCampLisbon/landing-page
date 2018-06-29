@@ -72,6 +72,8 @@
         display: flex;
     }
 
+    /*** Instagram Showcase ***/
+    
     .insta_img_container {
         width: 100%;
         float: center;
@@ -91,7 +93,18 @@
         height: 125px;
     }
 
+    /*** Email Form ***/
     .form_join_us_container {
         flex-grow: 1;
+    }
+
+    .form_join_us {
+        text-align: center;
+    }
+
+    .form_join_us_input {
+        width: 351px;
+        margin: 7px auto;
+        display: block;
     }
 }
