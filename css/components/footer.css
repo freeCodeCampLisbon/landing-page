@@ -1,5 +1,5 @@
 footer.footerSection{
-    background-color: rgb(7, 100, 4);
+    background-color: var(--main-color);
     color:white;
     text-align: center;
     }
