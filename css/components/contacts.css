@@ -1,0 +1,11 @@
+#map_container { height: 240px; }
+
+a.reset_default{
+    text-transform: unset;
+    box-shadow: unset;
+    padding: unset;  
+}
+
+.button-color-style-2{
+    color: var(--button-color-style-2);
+}

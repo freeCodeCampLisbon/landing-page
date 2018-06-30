@@ -1,12 +1,56 @@
 /* styling related to navbar section*/
+nav.navStyle{
+    -webkit-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 1s;
+         -o-transition-duration: 1s;
+            transition-duration: 1s;
+    -webkit-transition-timing-function: linear;
+         -o-transition-timing-function: linear;
+            transition-timing-function: linear;
+    -webkit-transition-delay: 1ms;
+         -o-transition-delay: 1ms;
+            transition-delay: 1ms;
+}
 nav.navStyle a{
     color: white; 
     text-transform: lowercase;
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    font:200 14px/16px 'Campton';
+    padding:0;
    }
 nav.navStyle button{
     border: none;
     background: none;
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
     padding: 0;
+}
+.navStyle .imgWhite{
+    display: block;
+}
+.navStyle.scrolled .imgWhite{
+    display: none;
+}
+.navStyle .imgNormal{
+    display: none;
+}
+.navStyle.scrolled .imgNormal{
+    display: block;
+}
+.navStyle.scrolled {
+    background-color: rgba(255, 255, 255, 0.95);
+    -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+            box-shadow: 0 3px 6px rgba(0,0,0,.25);
+}
+.navStyle.scrolled a{
+    color: black !important;
+}
+.navStyle.scrollInside {
+    background-color: rgba(7, 102, 4, 0.95);
+}
+.navStyle.scrolled.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }

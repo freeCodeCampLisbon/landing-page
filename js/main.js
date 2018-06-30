@@ -13,3 +13,30 @@ function burgerFunction() {
         lists.style.textAlign = "right";
     }
 }
+
+//navigation bar scroll function after hero section
+var $nav = $(".navStyle");
+var $hero = $(".heroSection");
+$(function () {
+    $(document).scroll(function (){
+        $nav.toggleClass('scrolled', $(this).scrollTop() > $hero.height());
+    });
+  });
+
+ $(document).ready(function() {
+    if($(this).scrollTop() > $hero.height()){
+        $nav.toggleClass("scrolled");
+    }
+});
+
+//navigation bar scroll inside hero section
+$(function () {
+    $(document).scroll(function (){
+        $nav.toggleClass('scrollInside', $(this).scrollTop() < $hero.height() && $(this).scrollTop() > $nav.height());   
+    });
+  });
+  $(document).ready(function() {
+    if(($(this).scrollTop() < $hero.height()) && ($(this).scrollTop() > $nav.height())){
+            $nav.toggleClass("scrollInside");
+    }
+});
