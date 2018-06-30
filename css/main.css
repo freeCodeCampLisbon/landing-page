@@ -21,6 +21,7 @@
 @import "components/hero.css";
 @import "components/contacts.css";
 @import "components/footer.css";
+@import "components/6-join-us.css";
 
 body{
     font: 200 14px/16px "Campton", Arial, sans-serif;
