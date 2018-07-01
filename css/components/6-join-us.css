@@ -1,21 +1,25 @@
 /***** CSS for the Join us section *****/ 
-/***** Instagram Image Showcase ******/
+/***** Section *****/
+.JoinUsSection {}
 
-.title_join_us{
+.JoinUsSection__title {
     font-size: 18px;
     color: grey;
     margin: 40px 36px 25px 36px;
 }
+/***** Instagram Image Showcase ******/
 
-.insta_img {
-    max-height: 125px;
-    max-width: 120px;
-    height: 100%;
-    width: 100%;
+.JoinUsSection__instagram {
+    display: inline-block;
 }
 
-.insta_img_container {
-    
+.JoinUsSection__instagram__imageHolder {
+    width: 120px;
+    height: 125px;
+}
+.JoinUsSection__instagram__imageHolder img {
+    max-height: 100%;
+    max-width: 100%;
 }
 
 .insta_col {
