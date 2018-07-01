@@ -22,35 +22,29 @@
     max-width: 100%;
 }
 
-.insta_col {
-    margin: 0 0 15px 0;
-    overflow: hidden;
-}
-
-
 /***** Email Form *****/
 
-.form_join_us_title {
+.JoinUsSection__form h2 {
     text-align: center;
     margin-top: 27px;
     color: #076604;
 }
 
-.form_join_us_subtitle {
+.JoinUsSection__form p {
     text-align: center;
 }
 
-.form_join_us {
+.JoinUsSection__form form {
     text-align: center;
 }
 
-.form_join_us_input {
+.JoinUsSection__form form input {
     margin-top: 7px;
-    width: 100%;
+    width: 70%;
 }
 
-.form_join_us_button {
-    margin-top: 7px;
+.JoinUsSection__form form button {
+    display: block;
 }
 
 
@@ -58,19 +52,10 @@
 
 /* Tablets and bigger */
 @media (min-width: 768px) {
-    .join_us_full {
-        display: flex;
-    }
-
-    /*** Instagram Showcase ***/
-    
-    .insta_img_container {
-        width: 100%;
-    }
-
     /*** Email Form ***/
-    .form_join_us_container {
-        flex-grow: 1;
+        
+    .JoinUsSection__form {
+        /* width: 100%; */
     }
 
     .form_join_us {
