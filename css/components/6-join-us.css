@@ -1,49 +1,96 @@
 /***** CSS for the Join us section *****/ 
 /***** Section *****/
-.JoinUsSection {}
 
-.JoinUsSection__title {
+.joinUsSection__title {
     font-size: 18px;
     color: grey;
     margin: 40px 36px 25px 36px;
 }
+
 /***** Instagram Image Showcase ******/
 
-.JoinUsSection__instagram {
-    display: inline-block;
+.joinUsSection--instagram {
+    display: block;
 }
 
-.JoinUsSection__instagram__imageHolder {
-    width: 120px;
-    height: 125px;
-    margin-top: 15px;
+
+.joinUsSection--instagram__imageHolder.joinUsSection--instagram__imageHolder {
+    position: relative;
+    overflow: hidden;
+    padding: 0 .5em;
 }
-.JoinUsSection__instagram__imageHolder img {
-    max-height: 100%;
-    max-width: 100%;
+
+.joinUsSection--instagram__imageHolder i {
+    font-size: 1.6em;
+    color: var(--white-color);
+    position: absolute;
+    top:0;
+    right:.3em;
+    z-index: 1;
+    opacity: .4;
 }
+
+.joinUsSection--instagram__imageHolder figure{
+    position: relative;
+}
+
+.joinUsSection--instagram__imageHolder figure:hover {
+    cursor: pointer;
+}
+
+.joinUsSection--instagram__imageHolder figure figcaption{
+    opacity: 0;
+    position: absolute;
+    background: var(--main-color);
+    display: flex;
+    align-items: center;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    transition: opacity .3s ease-in-out;
+}
+
+.joinUsSection--instagram__imageHolder figure figcaption p{
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin:0;
+    color: var(--white-color);
+}
+
+.joinUsSection--instagram__imageHolder:hover figure figcaption{
+    opacity: 1;
+}
+
+.joinUsSection--instagram__imageHolder img {
+    position: relative;
+    width: 100%;
+}
+
+
 
 /***** Email Form *****/
 
-.JoinUsSection__form h2 {
+.joinUsSection--form h2 {
     text-align: center;
     margin-top: 27px;
     color: #076604;
 }
 
-.JoinUsSection__form p {
+.joinUsSection--form p {
     text-align: center;
 }
 
-.JoinUsSection__form form {
+.joinUsSection--form form {
     text-align: center;
 }
 
-.JoinUsSection__form__formGroup {
+.joinUsSection--form__formGroup {
     text-align: center;
 }
 
-.JoinUsSection__form form input {
+.joinUsSection--form form input {
     margin-right: auto;
     margin-left: auto;
     margin-top: 7px;
@@ -51,11 +98,10 @@
     display: block;
 }
 
-.JoinUsSection__form form button {
+.joinUsSection--form form button {
     display: block;
     margin-left: auto;
     margin-right: 90px;
     margin-top: 8px;
     width: 180px;
 }
-
