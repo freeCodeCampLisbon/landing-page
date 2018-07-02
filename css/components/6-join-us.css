@@ -94,7 +94,7 @@
     margin-right: auto;
     margin-left: auto;
     margin-top: 7px;
-    width: 360px;
+    width: 100%;
     display: block;
 }
 
@@ -104,4 +104,10 @@
     margin-right: 90px;
     margin-top: 8px;
     width: 180px;
+}
+
+@media (min-width: 992px){
+    .joinUsSection--form form input {
+        max-width: 360px;
+    }
 }
