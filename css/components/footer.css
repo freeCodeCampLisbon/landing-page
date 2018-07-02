@@ -1,19 +1,30 @@
 footer.footerSection{
-    background-color: rgb(7, 100, 4);
+    background-color: var(--main-color);
     color:white;
     text-align: center;
-    }
+}
+
+footer.footerSection .socialMedia{
+    margin: 0;
+}
+
+footer.footerSection .socialMedia li{
+    display: inline-block;
+}
+
 footer.footerSection .socialMedia a{
     box-shadow: none;
     color: white;
     padding: 10px;
-    }
+    text-decoration: none;
+    font-size: 1.1em;
+}  
 footer.footerSection .signature{
     font:200 14px/16px 'Campton';
     text-align: center;
-    }
+}
+
 .heart{
-    color:red;
-    font-size: 1.5em;
+    color: var(--secondary-color);
 }
      
