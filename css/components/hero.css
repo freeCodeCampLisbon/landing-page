@@ -7,16 +7,21 @@ section.heroSection .heroContainer{
     background-size: cover;
     padding-top: 12%;
     padding-bottom: 12%;
-    height: 100vh;
+    min-height: 100vh;
     }
 section.heroSection .socialMedia a{
     -webkit-box-shadow: none;
             box-shadow: none;
     color: white;
-    padding: 5px 5px;  
+    padding: 5px 5px;
+    font-size: 1.3em;
     }
 section.heroSection .jumbotron .heroButton{
     color: white;
     font-size: 0.8rem;
     padding: 5px 25px; 
+}
+section.heroSection .heroContainer hr{
+    border-top: 0.1em solid rgb(255, 255, 255);
+    background: var(--white-color);
 }
