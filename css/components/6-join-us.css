@@ -16,6 +16,7 @@
 .JoinUsSection__instagram__imageHolder {
     width: 120px;
     height: 125px;
+    margin-top: 15px;
 }
 .JoinUsSection__instagram__imageHolder img {
     max-height: 100%;
@@ -38,39 +39,23 @@
     text-align: center;
 }
 
+.JoinUsSection__form__formGroup {
+    text-align: center;
+}
+
 .JoinUsSection__form form input {
+    margin-right: auto;
+    margin-left: auto;
     margin-top: 7px;
-    width: 70%;
+    width: 360px;
+    display: block;
 }
 
 .JoinUsSection__form form button {
     display: block;
+    margin-left: auto;
+    margin-right: 90px;
+    margin-top: 8px;
+    width: 180px;
 }
 
-
-/***** Media Queries *****/
-
-/* Tablets and bigger */
-@media (min-width: 768px) {
-    /*** Email Form ***/
-        
-    .JoinUsSection__form {
-        /* width: 100%; */
-    }
-
-    .form_join_us {
-        text-align: center;
-    }
-
-    .form_join_us_input {
-        width: 351px;
-        margin: 7px auto;
-        display: block;
-    }
-
-    .form_join_us_button {
-        width: 200px;
-        display: block;
-        margin-right: 91px;
-    }
-}
