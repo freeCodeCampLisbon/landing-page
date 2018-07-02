@@ -1,117 +1,113 @@
 /***** CSS for the Join us section *****/ 
-/***** Instagram Image Showcase ******/
+/***** Section *****/
 
-.title_join_us{
+.joinUsSection__title {
     font-size: 18px;
     color: grey;
     margin: 40px 36px 25px 36px;
 }
 
-.insta_img {
-    width: 165px;
-    height: 172px;
+/***** Instagram Image Showcase ******/
+
+.joinUsSection--instagram {
+    display: block;
 }
 
-.insta_row {
-    float: none;
-    margin: 0 auto;
+
+.joinUsSection--instagram__imageHolder.joinUsSection--instagram__imageHolder {
+    position: relative;
+    overflow: hidden;
+    padding: 0 .5em;
 }
 
-.insta_col {
-    margin: 0 0 15px 0; 
+.joinUsSection--instagram__imageHolder i {
+    font-size: 1.6em;
+    color: var(--white-color);
+    position: absolute;
+    top:0;
+    right:.3em;
+    z-index: 1;
+    opacity: .4;
 }
 
-.insta_col:nth-child(odd) {
-    padding-right: 7px;
-    margin-right: -7px;
+.joinUsSection--instagram__imageHolder figure{
+    position: relative;
 }
 
-.insta_col:nth-child(even) {
-    padding-left: 7px;
-    margin-left: -7px;
+.joinUsSection--instagram__imageHolder figure:hover {
+    cursor: pointer;
 }
 
-.insta_img_container {
+.joinUsSection--instagram__imageHolder figure figcaption{
+    opacity: 0;
+    position: absolute;
+    background: var(--main-color);
+    display: flex;
+    align-items: center;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    transition: opacity .3s ease-in-out;
+}
+
+.joinUsSection--instagram__imageHolder figure figcaption p{
     text-align: center;
+    display: block;
+    width: 100%;
+    margin:0;
+    color: var(--white-color);
 }
+
+.joinUsSection--instagram__imageHolder:hover figure figcaption{
+    opacity: 1;
+}
+
+.joinUsSection--instagram__imageHolder img {
+    position: relative;
+    width: 100%;
+}
+
+
+
 /***** Email Form *****/
 
-.form_join_us_title {
+.joinUsSection--form h2 {
     text-align: center;
     margin-top: 27px;
     color: #076604;
 }
 
-.form_join_us_subtitle {
+.joinUsSection--form p {
     text-align: center;
 }
 
-.form_join_us {
+.joinUsSection--form form {
     text-align: center;
 }
 
-.form_join_us_input {
+.joinUsSection--form__formGroup {
+    text-align: center;
+}
+
+.joinUsSection--form form input {
+    margin-right: auto;
+    margin-left: auto;
     margin-top: 7px;
     width: 100%;
+    display: block;
 }
 
-.form_join_us_button {
-    float: right;
-    margin-top: 7px;
+.joinUsSection--form form button {
+    display: block;
+    margin-left: auto;
+    margin-right: 90px;
+    margin-top: 8px;
+    width: 180px;
 }
 
-.form_join_us_container {
-    margin-bottom: 52px;
-}
-
-/***** Media Queries *****/
-
-/* Tablets and bigger */
-@media (min-width: 768px) {
-    .join_us_full {
-        display: flex;
-    }
-
-    /*** Instagram Showcase ***/
-    
-    .insta_img_container {
-        width: 100%;
-        float: center;
-    }
-
-    .insta_col:nth-child(odd) {
-        margin-right: 7px;
-    }
-    
-    .insta_col:nth-child(even) {
-
-        margin-left: 7px;
-    }
-
-    .insta_img {
-        width: 121px;
-        height: 125px;
-    }
-
-    /*** Email Form ***/
-    .form_join_us_container {
-        flex-grow: 1;
-    }
-
-    .form_join_us {
-        text-align: center;
-    }
-
-    .form_join_us_input {
-        width: 351px;
-        margin: 7px auto;
-        display: block;
-    }
-
-    .form_join_us_button {
-        width: 200px;
-        display: block;
-        float: right;
-        margin-right: 91px;
+@media (min-width: 992px){
+    .joinUsSection--form form input {
+        max-width: 360px;
     }
 }
