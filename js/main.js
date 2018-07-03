@@ -1,9 +1,9 @@
 const hamBurger = document.querySelector(".hamBurger")
 const lists = document.querySelector(".collapse");
 
-hamBurger.addEventListener("click", function(){
+hamBurger.addEventListener("click", function () {
     burgerFunction();
-}) 
+})
 
 function burgerFunction() {
     if (lists.style.display === "block") {
@@ -21,52 +21,73 @@ $(function () {
 
     'use strict';
 
-    $(document).scroll(function (){
+    $(document).scroll(function () {
         $nav.toggleClass('scrolled', $(this).scrollTop() > $hero.height());
     });
-  });
+});
 
- $(document).ready(function() {
-    if($(this).scrollTop() > $hero.height()){
+$(document).ready(function () {
+    if ($(this).scrollTop() > $hero.height()) {
         $nav.toggleClass("scrolled");
     }
 });
 
 //navigation bar scroll inside hero section
 $(function () {
-    $(document).scroll(function (){
-        $nav.toggleClass('scrollInside', $(this).scrollTop() < $hero.height() && $(this).scrollTop() > $nav.height());   
+    $(document).scroll(function () {
+        $nav.toggleClass('scrollInside', $(this).scrollTop() < $hero.height() && $(this).scrollTop() > $nav.height());
     });
-  });
-  $(document).ready(function() {
-    if(($(this).scrollTop() < $hero.height()) && ($(this).scrollTop() > $nav.height())){
-            $nav.toggleClass("scrollInside");
+});
+$(document).ready(function () {
+    if (($(this).scrollTop() < $hero.height()) && ($(this).scrollTop() > $nav.height())) {
+        $nav.toggleClass("scrollInside");
     }
 });
 
 //nav-items click and scroll
-$(".nav-proximoMeet").click(function() {
+$(".nav-proximoMeet").click(function () {
     $('html,body').animate({
-        scrollTop: $("#nxt-meetup").offset().top},
+        scrollTop: $("#nxt-meetup").offset().top
+    },
         'slow');
 });
-$(".nav-quemSomos").click(function() {
+$(".nav-quemSomos").click(function () {
     $('html,body').animate({
-        scrollTop: $(".quemSomos").offset().top},
+        scrollTop: $(".quemSomos").offset().top
+    },
         'slow');
 });
-$(".nav-testemunhos").click(function() {
+$(".nav-testemunhos").click(function () {
     $('html,body').animate({
-        scrollTop: $(".testimonialsSection").offset().top},
+        scrollTop: $(".testimonialsSection").offset().top
+    },
         'slow');
 });
-$(".nav-meetups").click(function() {
+$(".nav-meetups").click(function () {
     $('html,body').animate({
-        scrollTop: $(".meetupsSection").offset().top},
+        scrollTop: $(".meetupsSection").offset().top
+    },
         'slow');
 });
-$(".nav-junta-te").click(function() {
+$(".nav-junta-te").click(function () {
     $('html,body').animate({
-        scrollTop: $("#").offset().top},
+        scrollTop: $("#").offset().top
+    },
         'slow');
 });
+
+//url it's here to have all the events, inside an object!
+
+let APImethod = () => {
+    const access_token = "EAAUOkpBroAwBAL33yCedxxMMfUOZCTWUxWK1W01dP7MjmKum8zRJ36ip3yLqU3G7tyHEuWzA9R9Nfkg6z4AmypZBaUbgPUAooZACBhbMfZB3vximqZBSeRVtRK2wHGdLidhqFrdTkgxJEoEi0V5A80ec7XTJDmCsZD";
+    const url = `https://graph.facebook.com/v3.0/freeCodeCampLisbon/events?access_token=${access_token}`;
+
+    return fetch(url).then((res) => {
+        res.json().then(json => {
+            let data = json;
+            console.log(data);
+        })
+    })
+}
+
+APImethod();
