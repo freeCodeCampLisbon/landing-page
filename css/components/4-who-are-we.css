@@ -7,11 +7,11 @@ section.quemSomosSection .wrapper{
     grid-row-gap:1rem;  
 }
 
-section.quemSomosSection .nameSection{
+section.quemSomosSection .mainTitle{
     margin-bottom: 6rem;
     color:var(--grey-color);
     grid-column:1/-1;
-      }
+}
 
 section.quemSomosSection .mainTitleSection{
     grid-column:1/-1;
