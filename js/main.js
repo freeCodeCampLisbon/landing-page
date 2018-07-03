@@ -52,7 +52,7 @@ $(".nav-proximoMeet").click(function() {
 });
 $(".nav-quemSomos").click(function() {
     $('html,body').animate({
-        scrollTop: $(".quemSomos").offset().top},
+        scrollTop: $(".quemSomosSection").offset().top},
         'slow');
 });
 $(".nav-testemunhos").click(function() {
@@ -65,8 +65,8 @@ $(".nav-meetups").click(function() {
         scrollTop: $(".meetupsSection").offset().top},
         'slow');
 });
-$(".nav-junta-te").click(function() {
+$(".nav-juntaTe").click(function() {
     $('html,body').animate({
-        scrollTop: $("#").offset().top},
+        scrollTop: $(".joinUsSection").offset().top},
         'slow');
 });
