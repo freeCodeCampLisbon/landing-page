@@ -20,6 +20,10 @@ h2 {
     font: 200 45px/54px "Campton";
 }
 
+h2.green{
+    color: var(--main-color)
+}
+
 h3{
     font:200 24px/29px "Campton";
     color: var(--grey-color);

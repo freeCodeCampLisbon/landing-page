@@ -1,11 +1,40 @@
-#map_container { height: 240px; }
+/* Contacts Section */
 
-a.reset_default{
+section.contactsSection{
+    position: relative;
+}
+
+section.contactsSection h2{
+    font:400 2.8em/3em 'Campton';
+}
+
+section.contactsSection .mb-5 p{
+    font:200 .9em/1.2em 'Campton';
+    margin: 0;
+}
+
+section.contactsSection .card{
+    border: 0;
+    border-radius: 0;
+    box-shadow: 0 3px 6px rgba(0,0,0,.3);
+}
+
+section.contactsSection .card-body{
+    padding: 0;
+}
+
+section.contactsSection .leaflet-container{
+    height: 100%;
+}
+
+section.contactsSection .leaflet-bottom.leaflet-right{
+    display: none;
+}
+
+
+section.contactsSection a.reset_default{
+    color: var(--black-color);
     text-transform: unset;
     box-shadow: unset;
     padding: unset;  
-}
-
-.button-color-style-2{
-    color: var(--button-color-style-2);
 }

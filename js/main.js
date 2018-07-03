@@ -18,6 +18,9 @@ function burgerFunction() {
 var $nav = $(".navStyle");
 var $hero = $(".heroSection");
 $(function () {
+
+    'use strict';
+
     $(document).scroll(function (){
         $nav.toggleClass('scrolled', $(this).scrollTop() > $hero.height());
     });

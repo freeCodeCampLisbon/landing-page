@@ -28,7 +28,11 @@
                 // create the tile layer with correct attribution
                 const osmUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
                 const osmAttrib = 'Map data © <a class="reset_default" href="https://openstreetmap.org">OpenStreetMap</a> contributors';
-                var osm = new L.TileLayer(osmUrl, { minZoom: 8, maxZoom: 15, attribution: osmAttrib });
+                var osm = new L.TileLayer(osmUrl, { 
+                    minZoom: 12, 
+                    maxZoom: 15, 
+                    attribution: osmAttrib 
+                });
 
                 // start the map in South-East England
                 map
@@ -40,5 +44,4 @@
             }
         }
     }
-
-})()
+})();
