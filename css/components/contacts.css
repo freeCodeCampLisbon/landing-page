@@ -38,3 +38,17 @@ section.contactsSection a.reset_default{
     box-shadow: unset;
     padding: unset;  
 }
+
+@media (max-width:920px){
+    section.contactsSection .contactsSection--map {
+        min-height: 400px;
+    }
+
+    section.contactsSection .contactsSection--placeInfo {
+        text-align: center;
+    }
+
+    section.contactsSection .card{
+        box-shadow: none;
+    }
+}
