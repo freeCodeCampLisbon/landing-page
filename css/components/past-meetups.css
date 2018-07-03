@@ -36,9 +36,12 @@
     z-index: 999;
     top: 229px;
     color: white;
+    /**
+    TOFIX: Joana this is the fix for font
     font-size: 1.3rem;
-    font-family: RobotoCondensed-Bold, Arial, sans-serif;
-    padding-right: 26px;
+    font-family: RobotoCondensed-Bold, Arial, sans-serif;**/
+    font: 200 1.3rem/1rem 'Campton';
+    padding-right: 32px;
 }
 
 .space-around{
