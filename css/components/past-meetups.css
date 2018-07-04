@@ -32,6 +32,11 @@ section.meetupsSection .meetupsSection--list__item figcaption{
 
 section.meetupsSection .text-right a{
     color: var(--white-color);
+
+}
+section.meetupsSection .text-right a:hover{
+        text-decoration: none;
+
 }
 
 .image{ 
