@@ -9,8 +9,8 @@ let imagesList = document.querySelectorAll(".joinUsSection--instagram__imageHold
 
 // Settings
 let settings = {
-    user_id: "frecodecamplisbon",// user ID of Freecodecamp Lisbon
-    access_token: "SomeCrazyNumber" // Access Token 
+    user_id: "0cc4ef0beeeb4f568dc237aa869e1b7d",// user ID of Freecodecamp Lisbon
+    access_token: "7936680959.0cc4ef0.ba075073ced34573bb47bd0eafef3c42" // Access Token 
 };
 
 // API URL
