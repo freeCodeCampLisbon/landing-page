@@ -12,6 +12,7 @@
 section.meetupsSection .meetupsSection--list__item{
     position: relative;
     height: 170px;
+    box-shadow: none ;
 }
 
 section.meetupsSection .meetupsSection--list__item .meetupsSection--list__item--background{
@@ -32,14 +33,14 @@ section.meetupsSection .meetupsSection--list__item figcaption{
 
 section.meetupsSection .text-right a{
     color: var(--white-color);
+    box-shadow: none;
 
 }
 section.meetupsSection .text-right a:hover{
-        text-decoration: none;
-
+    text-decoration: none;
 }
 
-.image{ 
+section.meetupsSection .meetupsSection--list__item--image{ 
     z-index: -1;
     position: absolute;
     margin-left: -21px;
@@ -53,13 +54,4 @@ section.meetupsSection .text-right a:hover{
     width: 100%;
 }
 
-.space-around{
-   margin-bottom: 25px;
 
-}
-.btn-space{
-    margin: 25px;
-}
-.meetupsSection a{
-    box-shadow: none ;
-}
