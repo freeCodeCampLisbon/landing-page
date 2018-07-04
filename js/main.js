@@ -70,3 +70,8 @@ $(".nav-juntaTe").click(function() {
         scrollTop: $(".joinUsSection").offset().top},
         'slow');
 });
+$(".heroButton").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".joinUsSection").offset().top},
+        'slow');
+});
