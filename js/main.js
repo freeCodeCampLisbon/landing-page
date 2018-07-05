@@ -78,7 +78,7 @@ $(".nav-juntaTe").click(function () {
 
 //url it's here to have all the events, inside an object!
 
-let APImethod = () => {
+/* let APImethod = () => {
     const access_token = "EAAUOkpBroAwBAL33yCedxxMMfUOZCTWUxWK1W01dP7MjmKum8zRJ36ip3yLqU3G7tyHEuWzA9R9Nfkg6z4AmypZBaUbgPUAooZACBhbMfZB3vximqZBSeRVtRK2wHGdLidhqFrdTkgxJEoEi0V5A80ec7XTJDmCsZD";
     const url = `https://graph.facebook.com/v3.0/freeCodeCampLisbon/events?access_token=${access_token}`;
 
@@ -90,4 +90,4 @@ let APImethod = () => {
     })
 }
 
-APImethod();
+APImethod(); */

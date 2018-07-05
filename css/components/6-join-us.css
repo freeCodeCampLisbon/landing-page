@@ -21,6 +21,15 @@
     padding: 0 .5em;
 }
 
+.joinUsSection--instagram__imageHolder a{
+    padding: 0;
+    box-shadow: none;
+}
+
+.joinUsSection--instagram__imageHolder a:hover{
+    text-decoration: none;
+}
+
 .joinUsSection--instagram__imageHolder i {
     font-size: .7em;
     line-height: 1.2em;
