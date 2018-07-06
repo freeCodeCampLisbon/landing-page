@@ -13,3 +13,4 @@ function burgerFunction() {
         lists.style.textAlign = "right";
     }
 }
+
