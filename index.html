@@ -9,6 +9,7 @@
     <meta name="author" content="freeCodeCampLisbon">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin="" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -19,27 +20,28 @@
     <nav class="navbar navbar-dark fixed-top navbar-expand-lg navStyle">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="resources/img/fccLogowhite.svg" height="40" alt="FCC-Lisbon Logo">
+                <img src="resources/img/fccLogowhite.svg" height="40" alt="FCC-Lisbon Logo" class="imgWhite">
+                <img src="resources/img/fccLogonormal.svg" height="40" alt="FCC-Lisbon Logo" class="imgNormal">
             </a>
             <button class="navbar-toggler hamBurger" type="button">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse container" id="navbarToggler">
-                <ul class="nav navbar-nav ml-lg-auto mr-lg-5 navLists">
-                    <li class="nav-item px-2">
-                        <a class="nav-link" href="#">próximo meet(up)</a>
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="nav navbar-nav ml-lg-auto navLists">
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link nav-proximoMeet">próximo meet(up)</a>
                     </li>
-                    <li class="nav-item px-2">
-                        <a class="nav-link" href="#">quem(somos)</a>
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link nav-quemSomos" href="#">quem(somos)</a>
                     </li>
-                    <li class="nav-item px-2">
-                        <a class="nav-link" href="#">testemunhos</a>
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link nav-testemunhos" href="#">testemunhos</a>
                     </li>
-                    <li class="nav-item px-2">
-                        <a class="nav-link" href="#">meet(ups)</a>
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link nav-meetups" href="#">meet(ups)</a>
                     </li>
-                    <li class="nav-item px-2">
-                        <a class="nav-link" href="#">Junta-te a nós</a>
+                    <li class="nav-item pl-2 py-2">
+                        <a class="nav-link nav-juntaTe" href="#">Junta-te a nós</a>
                     </li>
                 </ul>
             </div>
@@ -48,29 +50,29 @@
     <section class="heroSection">
         <div class="jumbotron jumbotron-fluid d-flex justify-content-around heroContainer">
             <div class="d-none d-lg-inline-flex flex-column justify-content-end socialMedia">
-                <a href="#">
+                <a href="https://www.facebook.com/freeCodeCampLisbon/" target="_blank">
                     <i class="icon-facebook"></i>
                 </a>
-                <a href="#">
+                <a href="https://twitter.com/freeCodeCamp" target="_blank">
                     <i class="icon-twitter"></i>
                 </a>
-                <a href="#">
+                <a href="https://www.linkedin.com/company/freecodecamplisbon/" target="_blank">
                     <i class="icon-linkedin"></i>
                 </a>
-                <a href="#">
+                <a href="https://github.com/freeCodeCampLisbon" target="_blank">
                     <i class="icon-github"></i>
                 </a>
-                <a href="#">
+                <a href="https://www.instagram.com/freecodecamplisbon/" target="_blank">
                     <i class="icon-instagram"></i>
                 </a>
-                <a href="#">
+                <a href="https://discordapp.com/channels/391750188655443978/448088545597325312" target="_blank">
                     <i class="icon-discord"></i>
                 </a>
             </div>
-            <div class="d-inline-flex flex-column col-md-8 col-lg-5">
+            <div class="d-inline-flex flex-column col-md-8 col-lg-5 hero">
                 <h1 class="pl-4 pb-0">Hello, Campers!</h1>
                 <h3 class="pl-4">Text Título 2</h3>
-                <hr noshade size="20%" width="20%" class="ml-2">
+                <hr class="ml-2">
                 <p class="px-4 py-md-0 py-5">
                     freeCodeCamp is a non-profit organization that consists of an interactive learning web platform, an online community forum,
                     chat rooms, Medium publications and local organizations that intend to make learning web development
@@ -82,40 +84,43 @@
             </div>
         </div>
     </section>
-     <!-- NEXT MEETUP SECTION -->
-     <section id="nxt-meetup" class="container text-center d-md-flex justify-content-between">
+    <!-- NEXT MEETUP SECTION -->
+    <section id="nxt-meetup" class="container text-center d-md-flex justify-content-between">
         <!-- header & image -->
         <div class="img-container">
-            <h3 class="text-left mb-4">Próximo Meet(up)</h3>
+            <h1 class="mainTitle">próximo meet(up)</h3>
             <div class="nxt-meetup-img-bg">
                 <div class="nxt-meetup-img">
-                    <p class="text-white pr-4">Lisboa - <span class="img-meeting-date"></span></p>
+                    <p id="onimage-meetup-date" class="text-white pr-4">Lisboa -
+                        <span class="img-meeting-date"></span>
+                    </p>
                 </div>
             </div>
-            
+
         </div>
         <!-- content -->
         <div class="nxt-meetup-content mt-5">
-            <h3>FreeCodeCamp Lisbon <span id="meetup-number">16th</span> Weekly Meetup - <span class="coffe-meetup">Coffee</span></h3>
+            <h3 id="nxt-meetup-number"></h3>
 
             <!-- location and date -->
-            <p class="meetup-location-date text-md-left"><span class="next-meetup-date">19 de Maio</span> Sábado</p>
+            <p class="meetup-location-date text-md-left">
+                <span class="next-meetup-date">19 de Maio</span> Sábado</p>
             <!-- button -->
-            <button href="#" class="btn pink text-white md-mb-5">mais informações</button>    
+            <button href="#" class="btn pink text-white md-mb-5">mais informações</button>
         </div>
     </section>
+    
     <!--*************WHO ARE WE*****************-->
-    <section class="container quemSomos">
-        <div class="row">
-            <div class="col-12 pt-2 pb-2 ">
-                <h6 class="nameSection pl-4 pr-4">quem(somos)</h6>
-                <h2 class="pt-5 pl-4 pr-4 ">Texto Título 2</h2>
-                <hr noshade size="20%" width="20%" class="ml-2">
+   
+    <section class="quemSomosSection">
+        <div class="wrapper container">
+            <h1 class="mainTitle">quem(somos)</h6>
+            <div class="mainTitleSection">
+                <h2>Texto Título 2</h2>
+                <hr>
             </div>
-            <div class="image1 col-sm-12 col-md-7 pt-2 pb-2 paddingFix order-md-last">
-                <img src="resources/img/meetup1.jpg" alt="meetUp1" class="img-fluid">
-            </div>
-            <div class="col-sm-12 col-md-5 pt-4 pb-2 ">
+            <div class="image1"><img src="resources/img/meetup1.jpg" alt="meetUp1"></div>
+            <div class="text1">
                 <p>
                     O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado
                     por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um
@@ -124,34 +129,299 @@
                     de Letraset, que continham passagens com Lorem Ipsum, e mais recentemente com os programas de publicação
                     como o Aldus PageMaker que incluem versões do Lorem Ipsum.
                 </p>
+            </div>
+            <div class="image2"><img src="resources/img/meetup2.jpg" alt="meetUp2"></div>
+            <div class="image3"><img src="resources/img/meetup3.jpg" alt="meetUp3"></div>
+            <div class="text2">
+                    <p>
+                        O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão
+                        usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de
+                        livro. Este texto não só sobreviveu 5 séculos, mas também o salto para a tipografia electrónica, mantendo-se
+                        essencialmente inalterada. Foi popularizada nos anos 60 com a disponibilização das folhas de Letraset, que
+                        continham passagens com Lorem Ipsum, e mais recentemas de publicação como o Aldus PageMaker que incluem versões
+                        do Lorem Ipsum.
+                    </p>
+                <div class="descobreMais"><button type="button" class="green descobreMais">Descobre Mais</button></div>
+            </div>
+        </div>
+    </section>
+
+    <!--*************TESTIMONIALS**************-->
+    
+    <section class="testimonialsSection">
+        <div class="container">
+            <h1 class="mainTitle pt-2 pb-2">testemunhos</h1>
+            <div class="row">
+                <div class="col col-12 col-md-4 mt-4 mb-4">
+                    <div class="card rounded-0">
+                        <img class="card-img-top rounded-0" src="resources/img/testimonial1.jpeg" alt="testimonial photo">
+                        <div class="card-body">
+                            <h5 class="card-title text-uppercase">nome sobrenome</h5>
+                            <p class="card-text">
+                                O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo
+                                a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou
+                                os caracteres de um texto para criar.</p>
+                            <button type="button" class="btn green float-right md-mb-5 text-uppercase">descobre mais</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-12 col-md-4 mt-4 mb-4">
+                    <div class="card rounded-0">
+                        <img class="card-img-top rounded-0" src="resources/img/testimonial2.jpeg" alt="testimonial photo">
+                        <div class="card-body">
+                            <h5 class="card-title text-uppercase">nome sobrenome</h5>
+                            <p class="card-text">
+                                O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo
+                                a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou
+                                os caracteres de um texto para criar.</p>
+                            <button type="button" class="btn green float-right md-mb-5 text-uppercase">descobre mais</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-12 col-md-4 mt-4 mb-4">
+                    <div class="card rounded-0">
+                        <img class="card-img-top rounded-0" src="resources/img/testimonial3.jpeg" alt="testimonial photo">
+                        <div class="card-body">
+                            <h5 class="card-title text-uppercase">nome sobrenome</h5>
+                            <p class="card-text">
+                                O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo
+                                a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou
+                                os caracteres de um texto para criar..</p>
+                            <button type="button" class="btn green float-right text-uppercase">descobre mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!--*************MEETUPS**************-->
+    <section class="meetupsSection">
+        <div class="container container-space">
+            <h1 class="mainTitle">meet(ups)</p>
+            <div class="row meetupsSection--list">
+                <div class="col-12 col-sm-6 meetupsSection--list__item">
+                    <capture class="bg_1">
+                        <figure class="bg_2 background">
+                            <a href="https://www.facebook.com/events/173039450052645/" target="_blank">                 
+                                <img class="image img-responsive" src="./resources/img/meetup5.jpg" alt="reunião dos membros do freeCodeCamp" >
+                                <figcaption class="item-p">Lisboa - 2 de Junho</figcaption>                        
+                            </a>
+                        </figure>
+                    </capture>
+                </div>
+                <div class="col-12 col-sm-6 meetupsSection--list__item">
+                    <capture class="bg_1">
+                        <figure class="bg_2">
+                            <a href="https://www.facebook.com/events/207685050044205/" target="_blank">            
+                                <img class="image img-responsive" src="./resources/img/meetup2.jpg" alt="reunião dos membros do freeCodeCamp">
+                                <figcaption class="item-p">Lisboa - 9 de Junho</figcaption>                        
+                            </a>
+                        </figure>
+                    </capture>
+                </div>
+                <div class="col-12 col-sm-6 meetupsSection--list__item">
+                    <capture class="bg_1">
+                        <figure class="bg_2">
+                            <a href="https://www.facebook.com/events/234862093946008/" target="_blank">                       
+                                <img class="image img-responsive" src="./resources/img/meetup1.jpg" alt="reunião dos membros do freeCodeCamp">
+                                <figcaption class="item-p">Lisboa - 16 de Junho</figcaption>                        
+                            </a>
+                        </figure>
+                    </capture>
+                </div>
+                <div class="col-12 col-sm-6 meetupsSection--list__item">
+                    <div class="bg_1">
+                        <div class="bg_2">
+                            <a href="https://www.facebook.com/events/1496182147148481/" target="_blank">               
+                                <img class="image img-responsive" src="./resources/img/meetup4.jpg" alt="reunião dos membros do freeCodeCamp">
+                                <figcaption class="item-p">Lisboa - 23 de Junho</figcaption>                        
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 text-right">
+                <a href="https://www.facebook.com/groups/free.code.camp.lisbon/events/" target="_blank" class="green">
+                    Ver todas as meetups
+                </a>
             </div>
             <!--col-sm-12-->
         </div>
-    </div>
         <!--row-->
-        <div class="row justify-content-around pt-5">
-            <div class="secondImages col-6 col-md-4 pr-1">
-                <img src="resources/img/meetup2.jpg" alt="meetUp1" class="img-fluid ">
-            </div>
-            <!--secondImages-->
-            <div class="secondImages col-6 col-md-4 pl-1">
-                <img src="resources/img/meetup3.jpg" alt="meetUp1" class="img-fluid ">
-            </div>
-            <!--secondImages-->
-            <div class="col-sm-12 col-md-4 pt-4 pb-2">
-                <p>
-                    O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado
-                    por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um
-                    espécime de livro. Este texto não só sobreviveu 5 séculos, mas também o salto para a tipografia electrónica,
-                    mantendo-se essencialmente inalterada. Foi popularizada nos anos 60 com a disponibilização das folhas
-                    de Letraset, que continham passagens com Lorem Ipsum, e mais recentemente com os programas de publicação
-                    como o Aldus PageMaker que incluem versões do Lorem Ipsum.
-                </p>
-                <button type="button" class=" btn-success">Descobre Mais</button>
-            </div>
+       
             <!--row-->
     </section>
-    <script src="js/main.js"></script>
-</body>
 
+    <!--*************JOIN US**************-->
+    <section class="container joinUsSection">
+        <!-- Instagram images -->
+        <h1 class="mainTitle">junta-te a nós!</p>
+        <div class="row">
+            <div class="joinUsSection--instagram col-12 col-md-6">
+                <ul class="row">
+                    <li class="joinUsSection--instagram__imageHolder col-6 col-lg-4">
+                        <i class="icon icon-instagram"></i>
+                        <figure>
+                            <picture>
+                                <img src="resources/img/heroImage.png" alt="insta_img1">                                
+                            </picture>
+                            <figcaption>
+                                <p>This is the title</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="joinUsSection--instagram__imageHolder col-6 col-lg-4">
+                        <i class="icon icon-instagram"></i>
+                        <figure>
+                            <picture>
+                                <img src="resources/img/heroImage.png" alt="insta_img1">                                
+                            </picture>
+                            <figcaption>
+                                <p>This is the title</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="joinUsSection--instagram__imageHolder col-6 col-lg-4">
+                        <i class="icon icon-instagram"></i>
+                        <figure>
+                            <picture>
+                                <img src="resources/img/heroImage.png" alt="insta_img1">                                
+                            </picture>
+                            <figcaption>
+                                <p>This is the title</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="joinUsSection--instagram__imageHolder col-6 col-lg-4">
+                        <i class="icon icon-instagram"></i>
+                        <figure>
+                            <picture>
+                                <img src="resources/img/heroImage.png" alt="insta_img1">                                
+                            </picture>
+                            <figcaption>
+                                <p>This is the title</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="joinUsSection--instagram__imageHolder col-6 col-lg-4">
+                        <i class="icon icon-instagram"></i>
+                        <figure>
+                            <picture>
+                                <img src="resources/img/heroImage.png" alt="insta_img1">                                
+                            </picture>
+                            <figcaption>
+                                <p>This is the title</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="joinUsSection--instagram__imageHolder col-6 col-lg-4">
+                        <i class="icon icon-instagram"></i>
+                        <figure>
+                            <picture>
+                                <img src="resources/img/heroImage.png" alt="insta_img1">                                
+                            </picture>
+                            <figcaption>
+                                <p>This is the title</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul> <!-- row --> 
+            </div> <!-- insta_img_container -->
+
+            <!-- Join us form for email -->
+            <div class="joinUsSection--form col-12 col-md-6">
+                <h2> Então e tu?</h2>
+                <p>Do que estás à espera para aprender?</p>
+                <form>
+                    <div class="joinUsSection--form__formGroup form-group mx-auto">
+                        <input type="email" placeholder="Inserir e-mail">
+                        <input placeholder="Inserir nome">
+                        <button>Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- CONTACTS SECTION -->
+    <section class="contactsSection container pt-5 pb-5">
+        <div class="card">
+            <div class="card-body">
+                <div class="row mx-0">
+                    <div class="contactsSection--placeInfo col col-12 col-lg-6 py-5 pl-5">
+                        <h2 class="green">Contactos</h2>
+                        <div class="mb-5">
+                            <p>Alameda dos Oceanos, </p>
+                            <p class="mb-5">1990-392 Lisboa</p>
+                            <a class="reset_default pb" href="mailto:hello.world@freecodecamplisbon.org">hello.world@freecodecamplisbon.org</a>
+                        </div>
+                        <button href="https://www.facebook.com/groups/free.code.camp.lisbon" class="btn pink text-white md-mb-5 rounded-0">MAIS INFORMAÇÕES</button>
+                    </div>
+                    <div class="contactsSection--map col col-12 col-lg-6 px-0">
+                        <div id="map_container"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footerSection py-5">
+        <div class="container d-md-flex justify-content-between align-items-center">
+            <div class="signature">
+                Made with <span class="heart">&hearts;</span> by freeCodeCamp Lisbon Campers
+            </div>
+            <ul class="socialMedia">
+                <li>
+                    <a href="https://www.facebook.com/freeCodeCampLisbon/" target="_blank">
+                        <i class="icon-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/freeCodeCamp" target="_blank">
+                        <i class="icon-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/company/freecodecamplisbon/" target="_blank">
+                        <i class="icon-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/freeCodeCampLisbon" target="_blank">
+                        <i class="icon-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/freecodecamplisbon/" target="_blank">
+                        <i class="icon-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://discordapp.com/channels/391750188655443978/448088545597325312" target="_blank">
+                        <i class="icon-discord"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js" integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw==" crossorigin=""></script>
+    <script src="js/main.js"></script>
+    <script src="js/contacts.js"></script>
+    <script>
+
+        (function () {
+
+            'use strict';
+
+            const MARKER_POPUP_TEMPLATE = 'FreeCodeCamp Lisbon <br> <a class="reset_default" href="https://www.google.com/maps/place/Connect+Enterprises/@38.7833482,-9.099229,246m/data=!3m1!1e3!4m5!3m4!1s0xd1931f42d9bbfd9:0x5a58e6a0e94bf766!8m2!3d38.7834693!4d-9.0983841" target="blank">Alameda dos Oceanos 115, 1990-392 Lisboa</a>';
+            const mapContainerId = 'map_container';
+            const GPS_COORDINATES = {
+                LATITUDE: 38.7834693,
+                LONGITUDE: -9.1005728
+            };
+
+            ContactsSection.Init(mapContainerId, GPS_COORDINATES, MARKER_POPUP_TEMPLATE);
+        })();
+
+    </script>
+</body>
 </html>

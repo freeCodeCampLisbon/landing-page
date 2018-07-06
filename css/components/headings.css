@@ -15,13 +15,30 @@ h1 {
     padding: 1em 2em;
 }
 
+h1.mainTitle{
+    color: var(--grey-color);
+    padding: 0;
+    font:200 2em/1.8em 'Campton';
+    padding:0;
+    text-align: left;
+}
+
 h2 {
     position: relative;
     font: 200 45px/54px "Campton";
 }
 
+h2.green{
+    color: var(--main-color)
+}
+
 h3{
     font:200 24px/29px "Campton";
+    color: var(--grey-color);
+}
+
+h6 {
+    font: 200 18px "Campton";
     color: var(--grey-color);
 }
 

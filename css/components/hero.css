@@ -1,17 +1,31 @@
 section.heroSection .heroContainer{
     color: white;
-    background:linear-gradient(rgba(0, 100, 0, 0.90), rgba(0, 100, 0, 1)), url("../../resources/img/heroImage.png") no-repeat;
+    background:-webkit-gradient(linear, left top, left bottom, from(rgba(7, 102, 4, 0.90)), to(rgba(7, 102, 4, 1))), url("../../resources/img/heroImage.png") no-repeat;
+    background:-webkit-linear-gradient(rgba(7, 102, 4, 0.90), rgba(7, 102, 4, 1)), url("../../resources/img/heroImage.png") no-repeat;
+    background:-o-linear-gradient(rgba(7, 102, 4, 0.90), rgba(7, 102, 4, 1)), url("../../resources/img/heroImage.png") no-repeat;
+    background:linear-gradient(rgba(7, 102, 4, 0.90), rgba(7, 102, 4, 1)), url("../../resources/img/heroImage.png") no-repeat;
     background-size: cover;
     padding-top: 12%;
     padding-bottom: 12%;
+    min-height: 100vh;
     }
 section.heroSection .socialMedia a{
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
     color: white;
-    padding: 5px 5px;  
+    padding: 5px 5px;
+    font-size: 1.3em;
     }
 section.heroSection .jumbotron .heroButton{
     color: white;
     font-size: 0.8rem;
     padding: 5px 25px; 
+}
+section.heroSection .heroContainer hr{
+    border-top: 0.1em solid rgb(255, 255, 255);
+    background: var(--white-color);
+}
+
+section.heroSection .hero{
+    justify-content: center;
 }
