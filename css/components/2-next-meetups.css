@@ -23,9 +23,6 @@
 }
 
 #nxt-meetup .nxt-meetup-img {
-	background: -webkit-gradient(linear, left top, left bottom, from(rgba(7,102,4,0.8)), to(rgba(7,102,4,0.8))), url(../../resources/img/meetup4.jpg);
-	background: -webkit-linear-gradient(rgba(7,102,4,0.8), rgba(7,102,4,0.8)), url(../../resources/img/meetup4.jpg);
-	background: -o-linear-gradient(rgba(7,102,4,0.8), rgba(7,102,4,0.8)), url(../../resources/img/meetup4.jpg);
 	background: linear-gradient(rgba(7,102,4,0.8), rgba(7,102,4,0.8)), url(../../resources/img/meetup4.jpg);
 	background-position: center center; 
 	height: 120px;
@@ -39,6 +36,10 @@
 	right: 0;
 	margin: 0;
 	padding: 0;
+}
+
+#nxt-meetup-location {
+	display: none;
 }
 
 /*
@@ -101,5 +102,9 @@
 	#nxt-meetup .nxt-meetup-content button {
 		display: block;
 		margin-left: 28px;
+	}
+
+	#nxt-meetup-location {
+		display: inline-block;
 	}
 }

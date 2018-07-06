@@ -102,7 +102,17 @@ let APImethod = () => {
                 showTitle: function(element) {
                 	let meetupTitle = this.getNxtMeetupData();
                 	element.innerHTML = meetupTitle[0].name;
-                	console.log(meetupTitle[0].place.location);
+                	console.log(meetupTitle[0]);
+                },
+                showPlace: function(element) {
+                	let meetupPlace = this.getNxtMeetupData();
+                	element.innerHTML = meetupPlace[0].place.name + ', Lisbon';
+                },
+                showImgDate: function(element, element2) {
+                	let meetupPlace = this.getNxtMeetupData();
+                	let date = new Date(meetupPlace[0].start_time).toDateString();
+                	element.innerHTML = date;
+                	element2.innerText = date;
                 },
                 getNxtMeetupData: function() {
                 	return nxtMeetupData.meetups.data;
@@ -113,18 +123,23 @@ let APImethod = () => {
             let nxtMeetupView = {
                 init: function() {
                     this.showTitle();
+                    this.showPlace();
+                    this.showImgDate();
                 },
-                showTitle: function(element) {
+                showTitle: function() {
                     let meetupTitle = document.querySelector('#nxt-meetup-number');
                     nxtMeetupControler.showTitle(meetupTitle);
+                },
+                showPlace: function() {
+                	let place = document.querySelector('#nxt-meetup-location');
+                	nxtMeetupControler.showPlace(place);
+                },
+                showImgDate: function() {
+                	let onImageDate = document.querySelector('#onimage-date');
+                	let onInfoDate = document.querySelector('#nxt-meetup-date');
+                	nxtMeetupControler.showImgDate(onImageDate, onInfoDate);
                 }
             };
-            // let nxtMeetupNumber = document.querySelector('#nxt-meetup-number');
-            // nxtMeetupNumber.innerHTML = data.data[0].name;
-            // console.log(data.data[0]);
-            // console.log(nxtMeetupData.meetups.data[0]);
-            // console.log(data);
-            // console.log(nxtMeetupNumber);
             nxtMeetupControler.init();
         })
     })
