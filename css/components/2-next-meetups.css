@@ -30,7 +30,7 @@
 }
 
 #nxt-meetup .nxt-meetup-img p { 
-	font-size: 1.5em;
+	font-size: 1em;
 	position: absolute;
 	bottom: 0;
 	right: 0;
@@ -39,6 +39,9 @@
 }
 
 #nxt-meetup-location {
+	display: none;
+}
+#time {
 	display: none;
 }
 
@@ -59,9 +62,10 @@
 /*
 	- button
 */
-#nxt-meetup .nxt-meetup-content button {
-    font: 400 14px/16px "Campton";
+#nxt-meetup .nxt-meetup-content a {
+    font: 400 14px/16px "Roboto Condensed";
     text-transform: uppercase;
+    border-radius: 5px;
 }
 
 /*
@@ -72,7 +76,7 @@
 	#nxt-meetup {
 		-webkit-box-sizing: border-box;
 		        box-sizing: border-box;
-		height: 264px;
+		height: 300px;
 		width: 100%;
 	}
 	/* image container layout */
@@ -82,13 +86,16 @@
 	#nxt-meetup .nxt-meetup-img-bg, #nxt-meetup .nxt-meetup-img {
 		height: 196px;
 	}
+	#nxt-meetup .nxt-meetup-img p {
+		font-size: 1.5em;
+	}
 
 	/*content stylig*/
 	#nxt-meetup .nxt-meetup-content {
 		width: 430px;
 	}
 	#nxt-meetup .nxt-meetup-content h3 {
-		font-size: 1.7em;
+		font-size: 1em;
 	}
 	#nxt-meetup .nxt-meetup-content p {
 		margin-top: 0;
@@ -107,4 +114,8 @@
 	#nxt-meetup-location {
 		display: inline-block;
 	}
+	#time {
+	display: inline-block;
+	margin-top: 20px;
+}
 }
