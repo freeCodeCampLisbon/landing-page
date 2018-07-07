@@ -85,7 +85,7 @@
 
 .joinUsSection--form h2 {
     text-align: center;
-    margin-top: 27px;
+    margin-top: 0;
     color: #076604;
 }
 
@@ -107,6 +107,10 @@
     margin-top: 7px;
     width: 100%;
     display: block;
+}
+
+.joinUsSection--form form textarea {
+    margin-top: 7px;
 }
 
 .joinUsSection--form .joinUsSection--form__formGroup{
