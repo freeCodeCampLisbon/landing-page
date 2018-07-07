@@ -44,7 +44,7 @@ https://github.com/dwyl/learn-to-send-email-via-google-script-html-no-server/blo
       // add form-specific values into the data
       formData.formDataNameOrder = JSON.stringify(fields);
       formData.formGoogleSheetName = form.dataset.sheet || "responses"; // default sheet name
-      formData.formGoogleSendEmail = form.dataset.email || "hello.world@freecodecamplisbon.org"; // no email by default
+      formData.formGoogleSendEmail = form.dataset.email ||  "hello.world@freecodecamplisbon.org"; // no email by default
   
       console.log(formData);
       return formData;

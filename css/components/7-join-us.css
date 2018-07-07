@@ -111,6 +111,7 @@
 
 .joinUsSection--form form textarea {
     margin-top: 7px;
+    resize: none;
 }
 
 .joinUsSection--form .joinUsSection--form__formGroup{
