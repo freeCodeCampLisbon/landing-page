@@ -61,7 +61,7 @@ let templatingListItem = (itemObject) => {
                             `<img src="${itemObject.imgSrc}" alt="freeCodeCampLisbon">` +                              
                         `</picture>` +
                         `<figcaption>` +
-                            `<p>${itemObject.desc}</p>` +
+                            `<i class="icon icon-search"></i>` +
                         `</figcaption>` +
                     `</figure>` +
                 `</a>` +
