@@ -27,6 +27,8 @@ form input::placeholder{
     opacity: .4;
 }
 
+/* Pedro Filipe AKA puzzledbytheweb added this CSS but forgot to commit,
+it is now clear for everybody to see the changes. Added form textarea etc...*/
 form textarea {
     font: 200 14px/16px "Campton";
     padding:8px 16px;
