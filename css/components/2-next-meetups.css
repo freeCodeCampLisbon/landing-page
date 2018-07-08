@@ -1,6 +1,6 @@
 /*NEXT MEETUP SECTION*/
 #nxt-meetup {
-	height: 321px;	
+	height: 600px;	
 }
 
 /* - header 
@@ -41,10 +41,6 @@
 #nxt-meetup-location {
 	display: none;
 }
-#time {
-	display: none;
-}
-
 /*
 	- content font size
 */
@@ -52,31 +48,37 @@
 #nxt-meetup .nxt-meetup-content h3 {
 	font-size: 14px;	
 	color: var(--grey-color-2);
+	text-align: center;
 }
 #nxt-meetup .nxt-meetup-content p {
 	font-size: 17px;	
 	color: var(--grey-color);
 	margin-top:40px;
 	margin-bottom:40px;
+	text-align: center;
 }
 /*
 	- button
 */
 #nxt-meetup .nxt-meetup-content a {
-    font: 400 14px/16px "Roboto Condensed";
-    text-transform: uppercase;
-    border-radius: 5px;
+	display: block;
+	font: 400 14px/16px "Roboto Condensed";
+	text-transform: uppercase;
+	border-radius: 5px;
+	width: 180px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /*
-	media query = break point
+	// *** MEDIA QUERY = break point *** //
 */
 @media (min-width: 768px) {
 	/* main costainer layout */
 	#nxt-meetup {
 		-webkit-box-sizing: border-box;
 		        box-sizing: border-box;
-		height: 300px;
+		height: 321px;	
 		width: 100%;
 	}
 	/* image container layout */
@@ -106,16 +108,13 @@
 		padding-left: 28px;
 		text-align: left;
 	}
-	#nxt-meetup .nxt-meetup-content button {
-		display: block;
+	#nxt-meetup .nxt-meetup-content a {
+		display: inline-block;
+		text-align: left;
 		margin-left: 28px;
 	}
 
 	#nxt-meetup-location {
 		display: inline-block;
 	}
-	#time {
-	display: inline-block;
-	margin-top: 20px;
-}
 }
