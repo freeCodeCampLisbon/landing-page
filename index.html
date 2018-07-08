@@ -256,12 +256,12 @@
                 <p id="ajax-message" style="display: none">Obrigado! Irás receber um email brevemente!</p>
                 <form id="gform" method="POST" target="_blank" action="https://script.google.com/macros/s/AKfycbz1hqYEJPDz4IS27E2pIEQBpFDKHc8T6v-d5pQK/exec">
                     <div class="joinUsSection--form__formGroup form-group mx-auto">
-                        <input id="email" name="email" type="email" placeholder="Inserir e-mail">
+                        <input required id="email" name="email" type="email" placeholder="Inserir e-mail">
                         <span id="email-invalid" style="display:none">
                             Must be a valid email address</span>
                         <input id="nome" name="name" placeholder="Inserir nome">
                         <textarea placeholder="Apresenta-te!" name="message"></textarea>
-                        <button>Enviar</button> <!-- email: hello.world@freecodecamplisbon.org -->
+                        <button type="submit">Enviar</button> <!-- email: hello.world@freecodecamplisbon.org -->
                     </div>
                 </form>
             </div>
