@@ -45,6 +45,13 @@ $(document).ready(function () {
 });
 
 //nav-items click and scroll
+
+$(".heroButton").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".joinUsSection").offset().top},
+        'slow');
+});
+
 $(".nav-proximoMeet").click(function () {
     $('html,body').animate({
         scrollTop: $("#nxt-meetup").offset().top
