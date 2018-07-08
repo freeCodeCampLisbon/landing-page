@@ -14,8 +14,6 @@ function burgerFunction() {
     }
 }
 
-// <<<<<<< HEAD
-// =======
 //navigation bar scroll function after hero section
 var $nav = $(".navStyle");
 var $hero = $(".heroSection");
@@ -146,7 +144,5 @@ let APImethod = () => {
 }
 
 APImethod();
-// >>>>>>> 2ca41592c7ae2de27bfcb28ae4eb4d42e743bd21
-
 
 
