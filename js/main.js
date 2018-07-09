@@ -113,10 +113,10 @@ let APImethod = () => {
                 	let meetupTitle = this.getNxtMeetupData();
                 	element.innerHTML = meetupTitle[0].name;
                 },
-                // showPlace: function(element) {
-                // 	let meetupPlace = this.getNxtMeetupData();
-                // 	element.innerHTML = meetupPlace[0].place.name + ', Lisbon';
-                // },
+                showPlace: function(element) {
+                	let meetupPlace = this.getNxtMeetupData();
+                	element.innerHTML = meetupPlace[0].place.name + ', Lisbon';
+                },
                 showImgDate: function(element, element2) {
                 	let meetupPlace = this.getNxtMeetupData();
                 	let date = new Date(meetupPlace[0].start_time).toDateString();
@@ -133,7 +133,7 @@ let APImethod = () => {
                 init: function() {
                     this.showImage();
                     this.showTitle();
-                    // this.showPlace();
+                    this.showPlace();
                     this.showImgDate();
                 },
                 showImage: function(){
@@ -144,10 +144,10 @@ let APImethod = () => {
                     let meetupTitle = document.querySelector('#nxt-meetup-number');
                     nxtMeetupControler.showTitle(meetupTitle);
                 },
-                // showPlace: function() {
-                // 	let place = document.querySelector('#nxt-meetup-location');
-                // 	nxtMeetupControler.showPlace(place);
-                // },
+                showPlace: function() {
+                	let place = document.querySelector('#nxt-meetup-location');
+                	nxtMeetupControler.showPlace(place);
+                },
                 showImgDate: function() {
                 	let onImageDate = document.querySelector('#onimage-date');
                 	let onInfoDate = document.querySelector('#nxt-meetup-date');
