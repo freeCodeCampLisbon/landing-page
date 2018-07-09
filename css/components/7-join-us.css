@@ -73,10 +73,10 @@
 
 .joinUsSection--instagram__imageHolder figure figcaption div i {
     align-self: auto;
-    font-size: 50px;
+    font-size: 35px;
     color: var(--white-color);
-    top: 0.9em;
-    right: 0.8em;
+    top: 1.5em;
+    right: 1.5em;
 }
 
 .joinUsSection--instagram__imageHolder:hover figure figcaption{
