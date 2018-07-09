@@ -1,7 +1,4 @@
 /*NEXT MEETUP SECTION*/
-#nxt-meetup {
-	height: 600px;	
-}
 
 /* - header 
 	 - header color and positioning
@@ -18,24 +15,46 @@
 	- image background styling and coloring
 	- image paragraph styling
 */
-#nxt-meetup .nxt-meetup-img-bg {
-	background-color: var(--main-color);
+#nxt-meetup .nxt-meetup-img-bg{
+	position: relative;
+	overflow: hidden;
+	opacity:1;
+	transition: opacity .3s ease-in-out;
+}
+
+#nxt-meetup .nxt-meetup-img-bg:hover {
+	cursor: pointer;
+	opacity: .7;
+}
+
+#nxt-meetup .nxt-meetup-img--overlay{
+	position: absolute;
+	display: block;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background: rgba(7, 102, 4, .77);
+	z-index: 2;
 }
 
 #nxt-meetup .nxt-meetup-img {
-	background: linear-gradient(rgba(7,102,4,0.8), rgba(7,102,4,0.8)), url(../../resources/img/meetup4.jpg);
-	background-position: center center; 
-	height: 120px;
 	position: relative;
+	height: 170px;
+}
+
+#nxt-meetup .nxt-meetup-img img {
+	width: 100%;
 }
 
 #nxt-meetup .nxt-meetup-img p { 
 	font-size: 1em;
 	position: absolute;
 	bottom: 0;
-	right: 0;
+	right: 16px;
 	margin: 0;
 	padding: 0;
+	z-index:3;
 }
 
 #nxt-meetup-location {
@@ -85,9 +104,7 @@
 	#nxt-meetup .img-container {
 		width: 660px;
 	}
-	#nxt-meetup .nxt-meetup-img-bg, #nxt-meetup .nxt-meetup-img {
-		height: 196px;
-	}
+
 	#nxt-meetup .nxt-meetup-img p {
 		font-size: 1.5em;
 	}

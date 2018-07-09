@@ -18,7 +18,6 @@ function burgerFunction() {
 var $nav = $(".navStyle");
 var $hero = $(".heroSection");
 $(function () {
-
     'use strict';
 
     $(document).scroll(function () {
@@ -107,7 +106,7 @@ let APImethod = () => {
                 },
                 showImage: function(element){
                     let meetupImage = this.getNxtMeetupData();
-                    element.setAttribute("style", `background: linear-gradient(rgba(7,102,4,0.8), rgba(7,102,4,0.8)), url(${meetupImage[0].cover.source})`);
+                    element.src = meetupImage[0].cover.source;
                 },
                 showTitle: function(element) {
                 	let meetupTitle = this.getNxtMeetupData();
@@ -137,7 +136,7 @@ let APImethod = () => {
                     this.showImgDate();
                 },
                 showImage: function(){
-                    let meetupImage = document.querySelector('#nxt-meetup .nxt-meetup-img');
+                    let meetupImage = document.querySelector('#nxt-meetup .nxt-meetup-img img');
                     nxtMeetupControler.showImage(meetupImage);
                 },
                 showTitle: function() {

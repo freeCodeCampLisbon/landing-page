@@ -9,7 +9,8 @@
     <meta name="author" content="freeCodeCampLisbon">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin="" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+        crossorigin="" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -34,7 +35,7 @@
                     <li class="nav-item px-2 py-2">
                         <a class="nav-link nav-quemSomos" href="#">quem(somos)</a>
                     </li>
-                    <li class="nav-item px-2 py-2">
+                    <li class="nav-item px-2 py-2" style="display: none;">
                         <a class="nav-link nav-testemunhos" href="#">testemunhos</a>
                     </li>
                     <li class="nav-item px-2 py-2">
@@ -70,16 +71,17 @@
                 </a>
             </div>
             <div class="d-inline-flex flex-column col-md-8 col-lg-5 hero">
-                <h1 class="pl-4 pb-0">Hello, Campers!</h1>
-                <h3 class="pl-4">Text Título 2</h3>
+                <h1 class="pl-4 pb-0">Developer Journey</h1>
+                <h3 class="pl-4">"Find your way, conquer your dreams"</h3>
                 <hr class="ml-2">
                 <p class="px-4 py-md-0 py-5">
-                    freeCodeCamp is a non-profit organization that consists of an interactive learning web platform, an online community forum,
-                    chat rooms, Medium publications and local organizations that intend to make learning web development
-                    accessible to anyone.
+                    Bem-vindo coder, és novo neste mundo? Já fazes parte dele mas encontras-te perdido? Ou simplesmente estas a procura de dar
+                    o passo seguinte na tua jornada? Este é o lugar certo para ti... Somos uma comunidade composto por todos
+                    os níveis de programadores com os mais variados objetivos e vamos-te ajudar no teu caminho! Vem fazer
+                    parte desta comunidade!
                 </p>
                 <div class="d-flex justify-content-around d-md-block pl-4">
-                    <a class="pink heroButton" href="#" role="button">Junta-te a nós</a>
+                    <a class="pink heroButton" href="https://facebook.com/groups/free.code.camp.lisbon" target="_blank" role="button">Junta-te a nós</a>
                 </div>
             </div>
         </div>
@@ -89,13 +91,21 @@
         <!-- header & image -->
         <div class="img-container">
             <h1 class="mainTitle">próximo meet(up)</h3>
-            <div class="nxt-meetup-img-bg">
-                <div class="nxt-meetup-img">
-                    <p class="text-white pr-4 mb-2 text-right">Lisboa -
-                        <span id="onimage-date"></span>
-                    </p>
+                <div class="nxt-meetup-img-bg">
+                    <div class="nxt-meetup-img--overlay"></div>
+                    <figure class="nxt-meetup-img">
+                        <picture>
+                            <img src="" alt="">
+                        </picture>
+                        <figcaption class="text-white pr-4 mb-2 text-right">
+                            <p>Lisboa -
+                                <span id="onimage-date"></span>
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <div>
+                    </div>
                 </div>
-            </div>
 
         </div>
         <!-- content -->
@@ -104,53 +114,65 @@
 
             <!-- location and date -->
             <p class="meetup-location-date text-md-left">
-                <span id="nxt-meetup-date" class="next-meetup-date"></span><br>
+                <span id="nxt-meetup-date" class="next-meetup-date"></span>
+                <br>
                 <span id="nxt-meetup-location">EDGE Lisboa</span>
             </p>
             <!-- button -->
             <a href="https://www.facebook.com/events/278751039357581?__mref=mb" target="_blank" class="btn pink text-white md-mb-5">mais informações</a>
         </div>
     </section>
-    
+
     <!--*************WHO ARE WE*****************-->
-   
+
     <section class="quemSomosSection">
         <div class="wrapper container">
             <h1 class="mainTitle">quem(somos)</h6>
-            <div class="mainTitleSection">
-                <h2>Texto Título 2</h2>
-                <hr>
-            </div>
-            <div class="image1"><img src="resources/img/meetup1.jpg" alt="meetUp1"></div>
-            <div class="text1">
-                <p>
-                    O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado
-                    por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um
-                    espécime de livro. Este texto não só sobreviveu 5 séculos, mas também o salto para a tipografia electrónica,
-                    mantendo-se essencialmente inalterada. Foi popularizada nos anos 60 com a disponibilização das folhas
-                    de Letraset, que continham passagens com Lorem Ipsum, e mais recentemente com os programas de publicação
-                    como o Aldus PageMaker que incluem versões do Lorem Ipsum.
-                </p>
-            </div>
-            <div class="image2"><img src="resources/img/meetup2.jpg" alt="meetUp2"></div>
-            <div class="image3"><img src="resources/img/meetup3.jpg" alt="meetUp3"></div>
-            <div class="text2">
+                <div class="mainTitleSection">
+                    <h2>freeCodeCamp Lisbon</h2>
+                    <hr>
+                </div>
+                <div class="image1">
+                    <img src="resources/img/meetup1.jpg" alt="meetUp1">
+                </div>
+                <div class="text1">
                     <p>
-                        O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão
-                        usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de
-                        livro. Este texto não só sobreviveu 5 séculos, mas também o salto para a tipografia electrónica, mantendo-se
-                        essencialmente inalterada. Foi popularizada nos anos 60 com a disponibilização das folhas de Letraset, que
-                        continham passagens com Lorem Ipsum, e mais recentemas de publicação como o Aldus PageMaker que incluem versões
-                        do Lorem Ipsum.
+                        Somos um grupo de programadores que surgiu na comunidade freeCodeCamp Earth que decidiu juntar todos os elementos de Lisboa,
+                        com o objectivo de se entre ajudarem nesta jornada. Mais do que um grupo, uma família que partilha
+                        a mesma paixão, esta vontade de aprender mais e melhor. Temos como objectivo ter a maior comunidade
+                        de Lisboa e levar conhecimento ao maior número de pessoas, por essa razão é que este grupo é composto
+                        pelo mais variado níveis de programadores, desde completos iniciantes ao seniores developer, não
+                        discriminamos ninguém e estamos cá para ajudar em todos os obstáculos e festejar todas as conquistas,
+                        por essa razão e de forma a estarmos mais presentes em todos os momentos.
                     </p>
-                <div class="descobreMais"><button type="button" class="green descobreMais">Descobre Mais</button></div>
-            </div>
+                </div>
+                <div class="image2">
+                    <img src="resources/img/meetup2.jpg" alt="meetUp2">
+                </div>
+                <div class="image3">
+                    <img src="resources/img/meetup3.jpg" alt="meetUp3">
+                </div>
+                <div class="text2">
+                    <p>
+                        Criamos meetups semanais que com o tempo deixaram de ser simples pontos de encontro para passar a ser um evento com casa
+                        própria junto do nosso parceiro EDGE Portugal, que cedeu as suas instalações de forma a permitir
+                        que esta comunidade fica-se cada vez mais forte. Os nossos meetups servem para que a nossa comunidade
+                        tenha um momento na sua semana a onde só se fala, pensa e respira programação, onde é possível fazer
+                        Networking, trocar ideias, esclarecer dúvidas, mas o mais importante de tudo PROGRAMAR. Queremos
+                        ir mais além nesta jornada e fazer esta comunidade a estar presente nos mais variados eventos de
+                        tecnologia nacionais e quem sabe no futuro eventos internacionais. Porque o limite para nós é uma
+                        condição que não existe! Be Strong, Code On!
+                    </p>
+                    <div class="descobreMais">
+                        <a href="https://www.facebook.com/groups/free.code.camp.lisbon" class="green descobreMais">Descobre Mais</a>
+                    </div>
+                </div>
         </div>
     </section>
 
     <!--*************TESTIMONIALS**************-->
-    
-    <section class="testimonialsSection">
+
+    <section class="testimonialsSection" style="display: none;">
         <div class="container">
             <h1 class="mainTitle pt-2 pb-2">testemunhos</h1>
             <div class="row">
@@ -160,9 +182,10 @@
                         <div class="card-body">
                             <h5 class="card-title text-uppercase">nome sobrenome</h5>
                             <p class="card-text">
-                                O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo
-                                a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou
-                                os caracteres de um texto para criar.</p>
+                                O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado
+                                por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para
+                                criar.
+                            </p>
                             <button type="button" class="btn green float-right md-mb-5 text-uppercase">descobre mais</button>
                         </div>
                     </div>
@@ -173,9 +196,10 @@
                         <div class="card-body">
                             <h5 class="card-title text-uppercase">nome sobrenome</h5>
                             <p class="card-text">
-                                O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo
-                                a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou
-                                os caracteres de um texto para criar.</p>
+                                O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado
+                                por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para
+                                criar.
+                            </p>
                             <button type="button" class="btn green float-right md-mb-5 text-uppercase">descobre mais</button>
                         </div>
                     </div>
@@ -186,9 +210,10 @@
                         <div class="card-body">
                             <h5 class="card-title text-uppercase">nome sobrenome</h5>
                             <p class="card-text">
-                                O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo
-                                a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou
-                                os caracteres de um texto para criar..</p>
+                                O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado
+                                por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para
+                                criar..
+                            </p>
                             <button type="button" class="btn green float-right text-uppercase">descobre mais</button>
                         </div>
                     </div>
@@ -197,7 +222,7 @@
         </div>
     </section>
 
-     <!--*************MEETUPS**************-->
+    <!--*************MEETUPS**************-->
     <section class="meetupsSection">
         <div class="container container-space">
             <h1 class="mainTitle">meet(ups)</h1>
@@ -211,38 +236,40 @@
             <!--col-sm-12-->
         </div>
         <!--row-->
-       
-            <!--row-->
+
+        <!--row-->
     </section>
 
     <!--*************JOIN US**************-->
     <section class="container joinUsSection">
         <!-- Instagram images -->
         <h1 class="mainTitle">junta-te a nós!</p>
-        <div class="row">
-            <div class="joinUsSection--instagram col-12 col-md-6">
-                
-            </div> <!-- insta_img_container -->
+            <div class="row">
+                <div class="joinUsSection--instagram col-12 col-md-6">
 
-            <!-- Join us form for email -->
-            <div class="joinUsSection--form col-12 col-md-6">
-                <h2> Então e tu?</h2>
-                <p>Do que estás à espera para Aprender?</p>
-                <p id="ajax-message" style="display: none">Obrigado! Irás receber um email brevemente!</p>
-                <form id="gform" method="POST" target="_blank" action="https://script.google.com/macros/s/AKfycbz1hqYEJPDz4IS27E2pIEQBpFDKHc8T6v-d5pQK/exec">
-                    <div class="joinUsSection--form__formGroup form-group mx-auto">
-                        <input required id="email" name="email" type="email" placeholder="Inserir e-mail">
-                        <span id="email-invalid" style="display:none">
-                            Must be a valid email address</span>
-                        <input id="nome" name="name" placeholder="Inserir nome">
-                        <textarea placeholder="Apresenta-te!" name="message"></textarea>
-                        <button type="submit">Enviar</button> <!-- email: hello.world@freecodecamplisbon.org -->
-                    </div>
-                </form>
+                </div>
+                <!-- insta_img_container -->
+
+                <!-- Join us form for email -->
+                <div class="joinUsSection--form col-12 col-md-6">
+                    <h2> Então e tu?</h2>
+                    <p>Do que estás à espera para Aprender?</p>
+                    <p id="ajax-message" style="display: none">Obrigado! Irás receber um email brevemente!</p>
+                    <form id="gform" method="POST" target="_blank" action="https://script.google.com/macros/s/AKfycbz1hqYEJPDz4IS27E2pIEQBpFDKHc8T6v-d5pQK/exec">
+                        <div class="joinUsSection--form__formGroup form-group mx-auto">
+                            <input required id="email" name="email" type="email" placeholder="Inserir e-mail">
+                            <span id="email-invalid" style="display:none">
+                                Must be a valid email address</span>
+                            <input id="nome" name="name" placeholder="Inserir nome">
+                            <textarea placeholder="Apresenta-te!" name="message"></textarea>
+                            <button type="submit">Enviar</button>
+                            <!-- email: hello.world@freecodecamplisbon.org -->
+                        </div>
+                    </form>
+                </div>
             </div>
-        </div>
     </section>
-    
+
     <!-- CONTACTS SECTION -->
     <section class="contactsSection container pt-5 pb-5">
         <div class="card">
@@ -267,7 +294,8 @@
     <footer class="footerSection py-5">
         <div class="container d-md-flex justify-content-between align-items-center">
             <div class="signature">
-                Made with <span class="heart">&hearts;</span> by freeCodeCamp Lisbon Campers
+                Made with
+                <span class="heart">&hearts;</span> by freeCodeCamp Lisbon Campers
             </div>
             <ul class="socialMedia">
                 <li>
@@ -303,7 +331,8 @@
             </ul>
         </div>
     </footer>
-    <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js" integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw==" crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js" integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
+        crossorigin=""></script>
     <script src="js/main.js"></script>
     <script src="js/contacts.js"></script>
     <script>
@@ -325,5 +354,16 @@
     </script>
     <script src="js/join-us.js"></script>
     <script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121986234-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-121986234-1');
+    </script>
+
 </body>
+
 </html>

@@ -51,6 +51,8 @@ section.quemSomosSection .text1 , .text2{
 
 
 section.quemSomosSection .descobreMais{
+    color: white;
+    text-decoration: none;
     padding-top:0.7rem;
 }
 
