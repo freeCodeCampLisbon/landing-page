@@ -7,7 +7,6 @@ section.quemSomosSection .wrapper{
 }
 
 section.quemSomosSection .mainTitle{
-    margin-bottom: 6rem;
     color:var(--grey-color);
     grid-column:1/-1;
 }
