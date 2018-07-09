@@ -26,3 +26,32 @@ form input::placeholder{
     color: var(--grey-color-2);
     opacity: .4;
 }
+
+/* Pedro Filipe AKA puzzledbytheweb added this CSS but forgot to commit,
+it is now clear for everybody to see the changes. Added form textarea etc...*/
+form textarea {
+    font: 200 14px/16px "Campton";
+    padding:8px 16px;
+    border: 1px solid var(--main-color);
+    opacity: .6;
+    transition: opacity .3s ease-in-out;
+    width: 100%;
+    height: 108px;
+}
+
+form textarea:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+form textarea:focus{
+    opacity: 1;
+    outline: 0;
+    box-shadow: 0 3px 6px rgba(7,102,4,.25);
+}
+
+form textarea::placeholder{
+    font:200 14px/17px "Campton";
+    color: var(--grey-color-2);
+    opacity: .4;
+}

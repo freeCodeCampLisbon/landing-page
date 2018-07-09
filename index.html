@@ -201,31 +201,7 @@
     <section class="meetupsSection">
         <div class="container container-space">
             <h1 class="mainTitle">meet(ups)</h1>
-            <div class="row meetupsSection--list">
-                <a class="col-12 col-sm-6 meetupsSection--list__item pb-0 pr-0" href="https://www.facebook.com/events/173039450052645/" target="_blank">
-                    <figure class="meetupsSection--list__item--background">
-                        <img class="meetupsSection--list__item--image img-responsive" src="./resources/img/meetup5.jpg" alt="reunião dos membros do freeCodeCamp" >
-                        <figcaption>Lisboa - 2 de Junho</figcaption>  
-                    </figure>
-                </a>
-                <a class="col-12 col-sm-6 meetupsSection--list__item pb-0" href="https://www.facebook.com/events/207685050044205/" target="_blank">
-                    <figure class="meetupsSection--list__item--background">
-                        <img class="meetupsSection--list__item--image img-responsive" src="./resources/img/meetup2.jpg" alt="reunião dos membros do freeCodeCamp">
-                        <figcaption>Lisboa - 9 de Junho</figcaption>        
-                    </figure>
-                </a>
-                <a class="col-12 col-sm-6 meetupsSection--list__item pb-0 pr-0" href="https://www.facebook.com/events/234862093946008/" target="_blank">
-                    <figure class="meetupsSection--list__item--background">
-                        <img class="meetupsSection--list__item--image img-responsive" src="./resources/img/meetup1.jpg" alt="reunião dos membros do freeCodeCamp">
-                        <figcaption>Lisboa - 16 de Junho</figcaption>       
-                    </figure>
-                </a>
-                <a class="col-12 col-sm-6 meetupsSection--list__item pb-0" href="https://www.facebook.com/events/1496182147148481/" target="_blank">
-                    <figure class="meetupsSection--list__item--background">
-                        <img class="meetupsSection--list__item--image img-responsive" src="./resources/img/meetup4.jpg" alt="reunião dos membros do freeCodeCamp">
-                        <figcaption>Lisboa - 23 de Junho</figcaption>
-                    </figure>
-                </a>
+            <div class="row meetupsSection--list mb-4">
             </div>
             <div class="text-right">
                 <a href="https://www.facebook.com/groups/free.code.camp.lisbon/events/" target="_blank" class="green">
@@ -245,90 +221,28 @@
         <h1 class="mainTitle">junta-te a nós!</p>
         <div class="row">
             <div class="joinUsSection--instagram col-12 col-md-6">
-                <ul class="row">
-                    <li class="joinUsSection--instagram__imageHolder col-6 col-lg-4">
-                        <i class="icon icon-instagram"></i>
-                        <figure>
-                            <picture>
-                                <img src="resources/img/heroImage.png" alt="insta_img1">                                
-                            </picture>
-                            <figcaption>
-                                <p>This is the title</p>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li class="joinUsSection--instagram__imageHolder col-6 col-lg-4">
-                        <i class="icon icon-instagram"></i>
-                        <figure>
-                            <picture>
-                                <img src="resources/img/heroImage.png" alt="insta_img1">                                
-                            </picture>
-                            <figcaption>
-                                <p>This is the title</p>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li class="joinUsSection--instagram__imageHolder col-6 col-lg-4">
-                        <i class="icon icon-instagram"></i>
-                        <figure>
-                            <picture>
-                                <img src="resources/img/heroImage.png" alt="insta_img1">                                
-                            </picture>
-                            <figcaption>
-                                <p>This is the title</p>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li class="joinUsSection--instagram__imageHolder col-6 col-lg-4">
-                        <i class="icon icon-instagram"></i>
-                        <figure>
-                            <picture>
-                                <img src="resources/img/heroImage.png" alt="insta_img1">                                
-                            </picture>
-                            <figcaption>
-                                <p>This is the title</p>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li class="joinUsSection--instagram__imageHolder col-6 col-lg-4">
-                        <i class="icon icon-instagram"></i>
-                        <figure>
-                            <picture>
-                                <img src="resources/img/heroImage.png" alt="insta_img1">                                
-                            </picture>
-                            <figcaption>
-                                <p>This is the title</p>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li class="joinUsSection--instagram__imageHolder col-6 col-lg-4">
-                        <i class="icon icon-instagram"></i>
-                        <figure>
-                            <picture>
-                                <img src="resources/img/heroImage.png" alt="insta_img1">                                
-                            </picture>
-                            <figcaption>
-                                <p>This is the title</p>
-                            </figcaption>
-                        </figure>
-                    </li>
-                </ul> <!-- row --> 
+                
             </div> <!-- insta_img_container -->
 
             <!-- Join us form for email -->
             <div class="joinUsSection--form col-12 col-md-6">
                 <h2> Então e tu?</h2>
-                <p>Do que estás à espera para aprender?</p>
-                <form>
+                <p>Do que estás à espera para Aprender?</p>
+                <p id="ajax-message" style="display: none">Obrigado! Irás receber um email brevemente!</p>
+                <form id="gform" method="POST" target="_blank" action="https://script.google.com/macros/s/AKfycbz1hqYEJPDz4IS27E2pIEQBpFDKHc8T6v-d5pQK/exec">
                     <div class="joinUsSection--form__formGroup form-group mx-auto">
-                        <input type="email" placeholder="Inserir e-mail">
-                        <input placeholder="Inserir nome">
-                        <button>Enviar</button>
+                        <input required id="email" name="email" type="email" placeholder="Inserir e-mail">
+                        <span id="email-invalid" style="display:none">
+                            Must be a valid email address</span>
+                        <input id="nome" name="name" placeholder="Inserir nome">
+                        <textarea placeholder="Apresenta-te!" name="message"></textarea>
+                        <button type="submit">Enviar</button> <!-- email: hello.world@freecodecamplisbon.org -->
                     </div>
                 </form>
             </div>
         </div>
     </section>
+    
     <!-- CONTACTS SECTION -->
     <section class="contactsSection container pt-5 pb-5">
         <div class="card">
@@ -409,5 +323,7 @@
         })();
 
     </script>
+    <script src="js/join-us.js"></script>
+    <script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
 </body>
 </html>
