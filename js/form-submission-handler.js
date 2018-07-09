@@ -82,7 +82,6 @@ https://github.com/dwyl/learn-to-send-email-via-google-script-html-no-server/blo
         xhr.send(encoded);
     }
     function loaded() {
-      console.log("Contact form submission handler loaded successfully.");
       // bind to the submit event of our form
       var form = document.getElementById("gform");
       form.addEventListener("submit", handleFormSubmit, false);
