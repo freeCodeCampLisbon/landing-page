@@ -137,9 +137,8 @@
 }
 
 @media(min-width:768px) {
+
     .joinUsSection {
-        display: grid;
-        grid-template-rows: repeat(2, 1fr);
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -150,11 +149,30 @@
         grid-column: span 2;
     }
 
-    .joinUsSection--instagram {
-        grid-area: 2 / 1;
+    .joinUsSection--instagram ul {
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .joinUsSection--form {
+        display: grid;
+        grid-template-columns: 100px 1fr 100px;
+        grid-template-rows: 100px 1fr;
         grid-area: 2 / 2;
+    }
+
+    .joinUsSection--form div {
+        grid-area: 1 / span 3;
+    }
+
+    .joinUsSection--form form {
+        display: grid;
+        justify-items: center;
+        width: 500px;
+        grid-area: 2 / 2;
+    }
+
+    .joinUsSection--form__formGroup {
+        width: 330px;
     }
 }
