@@ -63,6 +63,7 @@
 
 .joinUsSection--instagram__imageHolder figure:hover {
     cursor: pointer;
+    
 }
 
 .joinUsSection--instagram__imageHolder figure figcaption{
@@ -139,7 +140,7 @@
 @media(min-width:768px) {
 
     .joinUsSection {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 50%);
     }
 
     .joinUsSection__title {
@@ -147,6 +148,11 @@
         color: grey;
         grid-area: 1 / 1;
         grid-column: span 2;
+    }
+
+    .joinUsSection--instagram {
+        align-self: flex-end;
+        justify-self: center;
     }
 
     .joinUsSection--instagram ul {
