@@ -123,6 +123,11 @@ let APImethod = () => {
                 	element.innerHTML = date;
                 	element2.innerText = date;
                 },
+                changeUrlButton: function(element){
+                    debugger;
+                    console.log(meetups.data[0]);
+                    element.setAttribute('href', `https://www.facebook.com/events/${meetups.data[0].id}/`);
+                },
                 getNxtMeetupData: function() {
                 	return meetups.data;
                 }
@@ -135,6 +140,7 @@ let APImethod = () => {
                     this.showTitle();
                     this.showPlace();
                     this.showImgDate();
+                    this.changeUrlButton();
                 },
                 showImage: function(){
                     let meetupImage = document.querySelector('#nxt-meetup .nxt-meetup-img');
@@ -152,6 +158,10 @@ let APImethod = () => {
                 	let onImageDate = document.querySelector('#onimage-date');
                 	let onInfoDate = document.querySelector('#nxt-meetup-date');
                 	nxtMeetupControler.showImgDate(onImageDate, onInfoDate);
+                },
+                changeUrlButton: function(){
+                    let button = document.querySelector('.nxt-meetup-content a');
+                    nxtMeetupControler.changeUrlButton(button);
                 }
             };
 
