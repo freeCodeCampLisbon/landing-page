@@ -29,7 +29,7 @@ fetch(url)
 
     const $el = document.querySelector('section.joinUsSection .joinUsSection--instagram');
     let ul = document.createElement('ul');
-    ul.classList = 'row';
+    /* ul.classList = 'row' */;
 
 
     for (item of data.data) {
@@ -53,18 +53,20 @@ fetch(url)
 
 let templatingListItem = (itemObject) => {
 
-    return `<li class="joinUsSection--instagram__imageHolder col-6 col-lg-4" id="insta_post#${itemObject.id}">` +       
-                `<i class="icon icon-instagram"></i>` +                    
-                `<a target="_blank" href="${itemObject.link}">` +     
-                    `<figure>` +
-                        `<picture>` +
-                            `<img src="${itemObject.imgSrc}" alt="freeCodeCampLisbon">` +                              
-                        `</picture>` +
-                        `<figcaption>` +
-                            '<i class="icon icon-search"></i>' +
-                        `</figcaption>` +
-                    `</figure>` +
-                `</a>` +
-            `</li>`;
+    return `<div class="joinUsSection--instagram__imageHolder">
+                <li id="insta_post#${itemObject.id}">` +                      
+                    `<a target="_blank" href="${itemObject.link}">` +     
+                        `<figure>` +     
+                            `<i class="icon icon-instagram"></i>` + 
+                            `<picture>` +
+                                `<img src="${itemObject.imgSrc}" alt="freeCodeCampLisbon">` +                                  
+                            `</picture>` +
+                            `<figcaption>` +
+                                '<i class="icon icon-search"></i>' +
+                            `</figcaption>` +
+                        `</figure>` +
+                    `</a>` +
+                `</li>` +
+            `</div>`;
 }
 
